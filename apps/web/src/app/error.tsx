@@ -16,9 +16,7 @@ export default function GlobalError({
         An unexpected error occurred. You can try again, and if it keeps happening please come back
         a little later.
       </p>
-      {error.digest ? (
-        <p className="mt-2 text-xs text-ink-300">Reference: {error.digest}</p>
-      ) : null}
+      {error.digest ? <p className="mt-2 text-xs text-ink-300">Reference: {error.digest}</p> : null}
       <button type="button" onClick={reset} className={`${buttonClasses("primary")} mt-6`}>
         Try again
       </button>

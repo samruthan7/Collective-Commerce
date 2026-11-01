@@ -43,7 +43,11 @@ export async function apiGet<T>(
     if (parsed.success) {
       throw new ApiError(parsed.data.error.code, parsed.data.error.message, response.status);
     }
-    throw new ApiError("UNKNOWN_ERROR", `Unexpected response (${response.status}).`, response.status);
+    throw new ApiError(
+      "UNKNOWN_ERROR",
+      `Unexpected response (${response.status}).`,
+      response.status,
+    );
   }
 
   return schema.parse(payload);

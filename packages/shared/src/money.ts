@@ -36,10 +36,7 @@ export function parsePaise(value: string | number | bigint, label = "amount"): P
   }
 
   if (typeof value === "bigint") {
-    if (
-      value > BigInt(Number.MAX_SAFE_INTEGER) ||
-      value < BigInt(Number.MIN_SAFE_INTEGER)
-    ) {
+    if (value > BigInt(Number.MAX_SAFE_INTEGER) || value < BigInt(Number.MIN_SAFE_INTEGER)) {
       throw new RangeError(`${label} is outside the safe integer range: ${value.toString()}`);
     }
     return Number(value);

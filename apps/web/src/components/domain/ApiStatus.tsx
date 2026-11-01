@@ -40,7 +40,10 @@ export function ApiStatus() {
       className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-line bg-card p-5 shadow-card"
     >
       <div className="flex items-start gap-3">
-        <span className={`mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full ${dotClass}`} aria-hidden="true" />
+        <span
+          className={`mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full ${dotClass}`}
+          aria-hidden="true"
+        />
         <div>
           <p className="font-semibold">{title}</p>
           {detail ? <p className="text-sm text-ink-500">{detail}</p> : null}
