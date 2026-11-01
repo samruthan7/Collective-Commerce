@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Fonts are injected by next/font as CSS variables on <html>. */
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-sora), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  /* Surfaces */
+  --color-surface: #fafafb;
+  --color-card: #ffffff;
+  --color-line: #e6e8ee;
+
+  /* Text (dark neutral) */
+  --color-ink-900: #11131a;
+  --color-ink-700: #2b2f3a;
+  --color-ink-500: #5b6070;
+  --color-ink-300: #a4a8b5;
+
+  /* The one accent colour */
+  --color-accent-50: #eef1ff;
+  --color-accent-100: #dde3ff;
+  --color-accent-500: #4a5cf0;
+  --color-accent-600: #3a49d6;
+  --color-accent-700: #2f3bb0;
+
+  /* Status colours (used sparingly) */
+  --color-success-50: #e7f6ef;
+  --color-success-600: #12805c;
+  --color-warning-50: #fdf3e1;
+  --color-warning-600: #a8650d;
+  --color-danger-50: #fdecef;
+  --color-danger-600: #c4314b;
+
+  --shadow-card: 0 1px 2px rgb(17 19 26 / 0.04), 0 8px 24px rgb(17 19 26 / 0.05);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-600);
+    outline-offset: 2px;
+  }
+}
+
+/* Motion is purposeful, and optional for people who ask for less of it (Part 8.1). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
