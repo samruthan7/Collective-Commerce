@@ -14,7 +14,12 @@
   "scripts": {
     "env:check": "node -v && npm -v",
     "build:shared": "npm run build -w @cc/shared",
+    "build:api": "npm run build -w @cc/api",
+    "build": "npm run build:shared && npm run build:api",
+    "dev:api": "npm run dev -w @cc/api",
+    "pretypecheck": "npm run build:shared",
     "typecheck": "npm run typecheck --workspaces --if-present",
+    "pretest": "npm run build:shared",
     "test": "npm run test --workspaces --if-present"
   },
   "devDependencies": {
