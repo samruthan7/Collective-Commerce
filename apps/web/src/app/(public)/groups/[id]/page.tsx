@@ -1,3 +1,4 @@
+import { OfferComparison } from "@/components/domain/OfferComparison";
 import { OffersPanel } from "@/components/domain/OffersPanel";
 import { getMySelection, listOffers } from "@/lib/offers";
 import type { Metadata } from "next";
@@ -90,6 +91,9 @@ export default async function GroupPage({ params }: { params: Promise<{ id: stri
           </ul>
         )}
       </section>
+      {showOffers && offers.length > 1 ? (
+        <OfferComparison members={group.member_count} offers={offers} />
+      ) : null}
       {showOffers && offers.length > 0 ? (
         <OffersPanel
           groupId={group.id}

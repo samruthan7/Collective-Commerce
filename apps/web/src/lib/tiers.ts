@@ -16,3 +16,11 @@ export function nextTier(tiers: Tier[], members: number): Tier | null {
   if (upcoming.length === 0) return null;
   return upcoming.reduce((soonest, t) => (t.minMembers < soonest.minMembers ? t : soonest));
 }
+/** Index of the lowest price, ignoring offers with no unlocked tier. Returns -1 if none. */
+export function lowestIndex(prices: (number | null)[]): number {
+  let best = -1;
+  prices.forEach((price, i) => {
+    if (price !== null && (best === -1 || price < (prices[best] as number))) best = i;
+  });
+  return best;
+}

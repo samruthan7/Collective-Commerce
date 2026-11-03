@@ -1,0 +1,4993 @@
+﻿=== FILE TREE ===
+apps\api\package.json
+apps\api\tsconfig.build.json
+apps\api\tsconfig.json
+apps\api\scripts\check-supabase.ts
+apps\api\scripts\concurrency-join.ts
+apps\api\scripts\tsconfig.json
+apps\api\src\app.ts
+apps\api\src\routes.ts
+apps\api\src\server.ts
+apps\api\src\config\env.ts
+apps\api\src\lib\errors.ts
+apps\api\src\lib\logger.ts
+apps\api\src\lib\supabaseAdmin.ts
+apps\api\src\middleware\errorHandler.ts
+apps\api\src\middleware\requestContext.ts
+apps\api\src\modules\health\routes.ts
+apps\api\tests\api\health.test.ts
+apps\api\tests\unit\env.test.ts
+apps\web\next-env.d.ts
+apps\web\next.config.ts
+apps\web\package.json
+apps\web\postcss.config.mjs
+apps\web\tsconfig.json
+apps\web\tsconfig.tsbuildinfo
+apps\web\vitest.config.mts
+apps\web\src\proxy.ts
+apps\web\src\app\error.tsx
+apps\web\src\app\globals.css
+apps\web\src\app\icon.svg
+apps\web\src\app\layout.tsx
+apps\web\src\app\not-found.tsx
+apps\web\src\app\(admin)\layout.tsx
+apps\web\src\app\(admin)\admin\page.tsx
+apps\web\src\app\(admin)\admin\catalog\page.tsx
+apps\web\src\app\(admin)\admin\sellers\page.tsx
+apps\web\src\app\(buyer)\layout.tsx
+apps\web\src\app\(buyer)\dashboard\page.tsx
+apps\web\src\app\(public)\layout.tsx
+apps\web\src\app\(public)\page.tsx
+apps\web\src\app\(public)\catalog\page.tsx
+apps\web\src\app\(public)\catalog\[category]\page.tsx
+apps\web\src\app\(public)\groups\page.tsx
+apps\web\src\app\(public)\groups\[id]\page.tsx
+apps\web\src\app\(public)\login\page.tsx
+apps\web\src\app\(public)\my\groups\page.tsx
+apps\web\src\app\(public)\my\orders\page.tsx
+apps\web\src\app\(public)\notifications\page.tsx
+apps\web\src\app\(public)\signup\page.tsx
+apps\web\src\app\(seller)\layout.tsx
+apps\web\src\app\(seller)\seller\page.tsx
+apps\web\src\app\(seller)\seller\groups\[id]\page.tsx
+apps\web\src\app\(seller)\seller\orders\page.tsx
+apps\web\src\app\(seller)\seller\quotes\page.tsx
+apps\web\src\components\providers.tsx
+apps\web\src\components\domain\ApiStatus.tsx
+apps\web\src\components\domain\AreaPlaceholder.tsx
+apps\web\src\components\domain\AuthForm.tsx
+apps\web\src\components\domain\AutoRefresh.tsx
+apps\web\src\components\domain\Countdown.tsx
+apps\web\src\components\domain\GroupActions.tsx
+apps\web\src\components\domain\GroupProgress.tsx
+apps\web\src\components\domain\OfferComparison.tsx
+apps\web\src\components\domain\OffersPanel.tsx
+apps\web\src\components\layout\AreaShell.tsx
+apps\web\src\components\layout\AuthMenu.tsx
+apps\web\src\components\layout\Logo.tsx
+apps\web\src\components\layout\SiteFooter.tsx
+apps\web\src\components\layout\SiteHeader.tsx
+apps\web\src\components\ui\ActionForm.tsx
+apps\web\src\components\ui\buttonStyles.ts
+apps\web\src\components\ui\inputStyles.ts
+apps\web\src\lib\actionState.ts
+apps\web\src\lib\apiClient.ts
+apps\web\src\lib\auth.ts
+apps\web\src\lib\authActions.ts
+apps\web\src\lib\authForm.ts
+apps\web\src\lib\authSchemas.ts
+apps\web\src\lib\catalog.ts
+apps\web\src\lib\catalogAdminActions.ts
+apps\web\src\lib\env.ts
+apps\web\src\lib\groupActions.ts
+apps\web\src\lib\groups.ts
+apps\web\src\lib\money.ts
+apps\web\src\lib\myGroups.ts
+apps\web\src\lib\myQuotes.ts
+apps\web\src\lib\notificationActions.ts
+apps\web\src\lib\notifications.ts
+apps\web\src\lib\offerActions.ts
+apps\web\src\lib\offers.ts
+apps\web\src\lib\orders.ts
+apps\web\src\lib\requireAdmin.ts
+apps\web\src\lib\requireUser.ts
+apps\web\src\lib\rpcErrors.ts
+apps\web\src\lib\sellerActions.ts
+apps\web\src\lib\sellers.ts
+apps\web\src\lib\slug.ts
+apps\web\src\lib\supabaseEnv.ts
+apps\web\src\lib\tiers.ts
+apps\web\src\lib\time.ts
+apps\web\src\lib\supabase\client.ts
+apps\web\src\lib\supabase\server.ts
+apps\web\src\lib\supabase\updateSession.ts
+apps\web\tests\setup.ts
+apps\web\tests\components\ApiStatus.test.tsx
+apps\web\tests\unit\authForm.test.ts
+apps\web\tests\unit\authSchemas.test.ts
+apps\web\tests\unit\env.test.ts
+apps\web\tests\unit\GroupProgress.test.tsx
+apps\web\tests\unit\lowest.test.ts
+apps\web\tests\unit\money.test.ts
+apps\web\tests\unit\slug.test.ts
+apps\web\tests\unit\supabaseEnv.test.ts
+apps\web\tests\unit\tiers.test.ts
+apps\web\tests\unit\time.test.ts
+packages\shared\package.json
+packages\shared\tsconfig.build.json
+packages\shared\tsconfig.json
+packages\shared\src\errors.ts
+packages\shared\src\index.ts
+packages\shared\src\money.test.ts
+packages\shared\src\money.ts
+supabase\seed.sql
+supabase\.temp\cli-latest
+supabase\.temp\gotrue-version
+supabase\.temp\linked-project.json
+supabase\.temp\pooler-url
+supabase\.temp\postgres-version
+supabase\.temp\project-ref
+supabase\.temp\rest-version
+supabase\.temp\storage-migration
+supabase\.temp\storage-version
+supabase\migrations\.gitkeep
+supabase\migrations\20261101163440_create_profiles.sql
+supabase\migrations\20261102133546_create_catalog.sql
+supabase\migrations\20261102162046_create_groups.sql
+supabase\migrations\20261102180937_sellers_and_bidding.sql
+supabase\migrations\20261103093218_notifications_and_orders.sql
+
+=== MIGRATIONS ===
+--- 20261101163440_create_profiles.sql
+-- Roles stored on the profile. Sellers are NOT a role: they are identified
+-- by membership of a seller organisation (added in a later phase).
+create type public.app_role as enum ('buyer', 'admin');
+
+create table public.profiles (
+  id uuid primary key references auth.users (id) on delete cascade,
+  full_name text,
+  phone text,
+  role public.app_role not null default 'buyer',
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+comment on table public.profiles is 'One row per signed-up user. Created automatically by a trigger.';
+
+-- Keep updated_at current.
+create function public.set_updated_at()
+returns trigger
+language plpgsql
+set search_path = ''
+as $$
+begin
+  new.updated_at = now();
+  return new;
+end;
+$$;
+
+create trigger profiles_set_updated_at
+  before update on public.profiles
+  for each row execute function public.set_updated_at();
+
+-- Create the profile row automatically when someone signs up.
+create function public.handle_new_user()
+returns trigger
+language plpgsql
+security definer
+set search_path = ''
+as $$
+begin
+  insert into public.profiles (id, full_name)
+  values (new.id, new.raw_user_meta_data ->> 'full_name');
+  return new;
+end;
+$$;
+
+create trigger on_auth_user_created
+  after insert on auth.users
+  for each row execute function public.handle_new_user();
+
+-- Row level security: a user can only see and edit their own row.
+alter table public.profiles enable row level security;
+
+create policy "profiles_select_own"
+  on public.profiles for select
+  to authenticated
+  using (id = (select auth.uid()));
+
+create policy "profiles_update_own"
+  on public.profiles for update
+  to authenticated
+  using (id = (select auth.uid()))
+  with check (id = (select auth.uid()));
+
+-- Explicit privileges: logged-out visitors get nothing, and users can edit
+-- only their name and phone, never their own role.
+revoke all on public.profiles from anon, authenticated;
+grant select on public.profiles to authenticated;
+grant update (full_name, phone) on public.profiles to authenticated;
+--- 20261102133546_create_catalog.sql
+-- Catalog: regions, categories, products and exact variants.
+-- Money is stored as whole paise (integers), never as decimals.
+
+-- Admin check used by the security policies below.
+create function public.is_admin()
+returns boolean
+language sql
+stable
+security definer
+set search_path = ''
+as $$
+  select exists (
+    select 1 from public.profiles
+    where id = (select auth.uid()) and role = 'admin'
+  );
+$$;
+
+create table public.regions (
+  id uuid primary key default gen_random_uuid(),
+  slug text not null unique,
+  name text not null,
+  state text,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table public.categories (
+  id uuid primary key default gen_random_uuid(),
+  slug text not null unique,
+  name text not null,
+  description text,
+  sort_order integer not null default 0,
+  is_active boolean not null default false,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table public.products (
+  id uuid primary key default gen_random_uuid(),
+  category_id uuid not null references public.categories (id) on delete restrict,
+  slug text not null unique,
+  brand text not null,
+  name text not null,
+  description text,
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table public.product_variants (
+  id uuid primary key default gen_random_uuid(),
+  product_id uuid not null references public.products (id) on delete cascade,
+  sku text not null unique,
+  label text not null,
+  attributes jsonb not null default '{}'::jsonb,
+  mrp_paise integer not null check (mrp_paise > 0),
+  is_active boolean not null default true,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index products_category_id_idx on public.products (category_id);
+create index product_variants_product_id_idx on public.product_variants (product_id);
+
+create trigger regions_set_updated_at before update on public.regions
+  for each row execute function public.set_updated_at();
+create trigger categories_set_updated_at before update on public.categories
+  for each row execute function public.set_updated_at();
+create trigger products_set_updated_at before update on public.products
+  for each row execute function public.set_updated_at();
+create trigger product_variants_set_updated_at before update on public.product_variants
+  for each row execute function public.set_updated_at();
+
+-- Row level security: everyone reads active rows, only admins change anything.
+alter table public.regions enable row level security;
+alter table public.categories enable row level security;
+alter table public.products enable row level security;
+alter table public.product_variants enable row level security;
+
+create policy "regions_read_active" on public.regions
+  for select to anon, authenticated using (is_active);
+create policy "regions_admin_all" on public.regions
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
+
+create policy "categories_read_active" on public.categories
+  for select to anon, authenticated using (is_active);
+create policy "categories_admin_all" on public.categories
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
+
+create policy "products_read_active" on public.products
+  for select to anon, authenticated using (is_active);
+create policy "products_admin_all" on public.products
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
+
+create policy "variants_read_active" on public.product_variants
+  for select to anon, authenticated using (is_active);
+create policy "variants_admin_all" on public.product_variants
+  for all to authenticated using (public.is_admin()) with check (public.is_admin());
+
+-- Explicit privileges. RLS then limits writes to admins.
+revoke all on public.regions, public.categories, public.products, public.product_variants
+  from anon, authenticated;
+grant select on public.regions, public.categories, public.products, public.product_variants
+  to anon, authenticated;
+grant insert, update, delete
+  on public.regions, public.categories, public.products, public.product_variants
+  to authenticated;
+
+-- Reference data. Launch city is Chennai (decision D14 default).
+insert into public.regions (slug, name, state)
+values ('chennai', 'Chennai', 'Tamil Nadu')
+on conflict (slug) do nothing;
+
+insert into public.categories (slug, name, description, sort_order, is_active) values
+  ('smartphones', 'Smartphones', 'Phones in exact storage and colour variants.', 1, true),
+  ('laptops', 'Laptops', 'Laptops in exact processor, memory and storage variants.', 2, true),
+  ('two-wheelers', 'Two-wheelers', 'Coming later.', 3, false),
+  ('cars', 'Cars', 'Coming later.', 4, false),
+  ('appliances', 'Appliances', 'Coming later.', 5, false),
+  ('furniture', 'Furniture', 'Coming later.', 6, false)
+on conflict (slug) do nothing;
+--- 20261102162046_create_groups.sql
+create type public.group_status as enum
+  ('open','full','bidding','locked','completed','cancelled','expired_no_offers');
+create type public.commitment_level as enum ('interested','committed');
+
+create table public.groups (
+  id uuid primary key default gen_random_uuid(),
+  variant_id uuid not null references public.product_variants (id) on delete restrict,
+  region_id uuid not null references public.regions (id) on delete restrict,
+  created_by uuid not null references public.profiles (id) on delete restrict,
+  status public.group_status not null default 'open',
+  min_members integer not null default 10 check (min_members > 0),
+  max_members integer,
+  member_count integer not null default 0 check (member_count >= 0),
+  locked_member_count integer,
+  join_deadline_at timestamptz not null,
+  bidding_deadline_at timestamptz not null,
+  selection_deadline_at timestamptz not null,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  check (max_members is null or max_members >= min_members),
+  check (bidding_deadline_at > join_deadline_at),
+  check (selection_deadline_at > bidding_deadline_at)
+);
+
+-- One open group per variant and region (blueprint rule).
+create unique index groups_one_open_per_variant_region
+  on public.groups (variant_id, region_id) where status = 'open';
+create index groups_status_idx on public.groups (status, join_deadline_at);
+
+create table public.group_members (
+  id uuid primary key default gen_random_uuid(),
+  group_id uuid not null references public.groups (id) on delete cascade,
+  user_id uuid not null references public.profiles (id) on delete cascade,
+  commitment public.commitment_level not null default 'interested',
+  joined_at timestamptz not null default now(),
+  left_at timestamptz,
+  unique (group_id, user_id)
+);
+create index group_members_user_id_idx on public.group_members (user_id);
+
+create trigger groups_set_updated_at before update on public.groups
+  for each row execute function public.set_updated_at();
+
+-- Row level security
+alter table public.groups enable row level security;
+alter table public.group_members enable row level security;
+
+create policy "groups_read_all" on public.groups
+  for select to anon, authenticated using (true);
+create policy "groups_admin_update" on public.groups
+  for update to authenticated using (public.is_admin()) with check (public.is_admin());
+create policy "members_read_own" on public.group_members
+  for select to authenticated using (user_id = (select auth.uid()) or public.is_admin());
+
+revoke all on public.groups, public.group_members from anon, authenticated;
+grant select on public.groups to anon, authenticated;
+grant update on public.groups to authenticated;
+grant select on public.group_members to authenticated;
+
+-- Anonymised member list ("Aarav K."): no ids, no contact data.
+create view public.group_members_public as
+select
+  gm.group_id, gm.commitment, gm.joined_at,
+  coalesce(nullif(split_part(p.full_name, ' ', 1), ''), 'Buyer')
+  || case when nullif(split_part(p.full_name, ' ', 2), '') is not null
+          then ' ' || left(split_part(p.full_name, ' ', 2), 1) || '.' else '' end as display_name
+from public.group_members gm
+join public.profiles p on p.id = gm.user_id
+where gm.left_at is null;
+grant select on public.group_members_public to anon, authenticated;
+
+-- Core: join a specific group. FOR UPDATE serialises all joins to this group.
+create function public.join_group_as(
+  p_group_id uuid, p_user_id uuid, p_commitment public.commitment_level
+) returns public.group_members
+language plpgsql security definer set search_path = '' as $$
+declare
+  g public.groups;
+  m public.group_members;
+begin
+  select * into g from public.groups where id = p_group_id for update;
+  if not found then raise exception 'GROUP_NOT_FOUND'; end if;
+  if g.status <> 'open' or g.join_deadline_at <= now() then raise exception 'GROUP_NOT_OPEN'; end if;
+  if g.max_members is not null and g.member_count >= g.max_members then raise exception 'GROUP_FULL'; end if;
+
+  select * into m from public.group_members where group_id = p_group_id and user_id = p_user_id;
+  if found and m.left_at is null then
+    raise exception 'ALREADY_MEMBER';
+  elsif found then
+    update public.group_members
+      set left_at = null, joined_at = now(), commitment = p_commitment
+      where id = m.id returning * into m;
+  else
+    insert into public.group_members (group_id, user_id, commitment)
+      values (p_group_id, p_user_id, p_commitment) returning * into m;
+  end if;
+
+  update public.groups
+    set member_count = member_count + 1,
+        status = case when max_members is not null and member_count + 1 >= max_members
+                      then 'full'::public.group_status else status end
+    where id = p_group_id;
+  return m;
+end $$;
+
+-- Join the open group for a variant; create it if none; overflow happens
+-- automatically because a full group is no longer "open".
+create function public.join_or_create_group_as(
+  p_variant_id uuid, p_region_id uuid, p_user_id uuid, p_commitment public.commitment_level
+) returns public.group_members
+language plpgsql security definer set search_path = '' as $$
+declare
+  g_id uuid;
+  attempts integer := 0;
+begin
+  if not exists (select 1 from public.product_variants where id = p_variant_id and is_active)
+     or not exists (select 1 from public.regions where id = p_region_id and is_active) then
+    raise exception 'VARIANT_NOT_FOUND';
+  end if;
+
+  loop
+    attempts := attempts + 1;
+    g_id := null;
+    select id into g_id from public.groups
+      where variant_id = p_variant_id and region_id = p_region_id and status = 'open'
+      for update;
+
+    if g_id is null then
+      begin
+        insert into public.groups
+          (variant_id, region_id, created_by, min_members, max_members,
+           join_deadline_at, bidding_deadline_at, selection_deadline_at)
+        values
+          (p_variant_id, p_region_id, p_user_id, 10, 50,
+           now() + interval '7 days', now() + interval '10 days', now() + interval '13 days')
+        returning id into g_id;
+      exception when unique_violation then
+        if attempts >= 5 then raise exception 'GROUP_BUSY'; end if;
+        continue;
+      end;
+    end if;
+
+    return public.join_group_as(g_id, p_user_id, p_commitment);
+  end loop;
+end $$;
+
+create function public.leave_group_as(p_group_id uuid, p_user_id uuid)
+returns void
+language plpgsql security definer set search_path = '' as $$
+declare
+  g public.groups;
+  m public.group_members;
+begin
+  select * into g from public.groups where id = p_group_id for update;
+  if not found then raise exception 'GROUP_NOT_FOUND'; end if;
+  if g.status not in ('open','full','bidding') then raise exception 'LEAVE_NOT_ALLOWED'; end if;
+
+  select * into m from public.group_members
+    where group_id = p_group_id and user_id = p_user_id and left_at is null;
+  if not found then raise exception 'NOT_MEMBER'; end if;
+
+  update public.group_members set left_at = now() where id = m.id;
+  update public.groups set member_count = member_count - 1 where id = p_group_id;
+end $$;
+
+-- Wrappers for logged-in users: the user id comes from the JWT, never from the client.
+create function public.join_or_create_group(
+  p_variant_id uuid, p_region_id uuid, p_commitment public.commitment_level default 'interested'
+) returns public.group_members
+language plpgsql security definer set search_path = '' as $$
+begin
+  if (select auth.uid()) is null then raise exception 'UNAUTHENTICATED'; end if;
+  return public.join_or_create_group_as(p_variant_id, p_region_id, (select auth.uid()), p_commitment);
+end $$;
+
+create function public.join_group(
+  p_group_id uuid, p_commitment public.commitment_level default 'interested'
+) returns public.group_members
+language plpgsql security definer set search_path = '' as $$
+begin
+  if (select auth.uid()) is null then raise exception 'UNAUTHENTICATED'; end if;
+  return public.join_group_as(p_group_id, (select auth.uid()), p_commitment);
+end $$;
+
+create function public.leave_group(p_group_id uuid)
+returns void
+language plpgsql security definer set search_path = '' as $$
+begin
+  if (select auth.uid()) is null then raise exception 'UNAUTHENTICATED'; end if;
+  perform public.leave_group_as(p_group_id, (select auth.uid()));
+end $$;
+
+-- Sweeper: every transition is a guarded UPDATE, so running it twice changes nothing.
+create function public.sweep_groups() returns jsonb
+language plpgsql security definer set search_path = '' as $$
+declare a integer; b integer; c integer; d integer;
+begin
+  update public.groups set status = 'bidding'
+    where status in ('open','full') and join_deadline_at <= now() and member_count >= min_members;
+  get diagnostics a = row_count;
+
+  update public.groups set status = 'cancelled'
+    where status = 'open' and join_deadline_at <= now() and member_count < min_members;
+  get diagnostics b = row_count;
+
+  -- Phase 6 will lock groups that have quotations; until then no offers means expired.
+  update public.groups set status = 'expired_no_offers'
+    where status = 'bidding' and bidding_deadline_at <= now();
+  get diagnostics c = row_count;
+
+  update public.groups set status = 'completed'
+    where status = 'locked' and selection_deadline_at <= now();
+  get diagnostics d = row_count;
+
+  return jsonb_build_object('to_bidding', a, 'cancelled', b, 'expired_no_offers', c, 'completed', d);
+end $$;
+
+-- Function privileges: *_as and sweep are server-only; wrappers are for logged-in users.
+revoke execute on function
+  public.join_group_as(uuid, uuid, public.commitment_level),
+  public.join_or_create_group_as(uuid, uuid, uuid, public.commitment_level),
+  public.leave_group_as(uuid, uuid),
+  public.sweep_groups()
+  from public, anon, authenticated;
+grant execute on function
+  public.join_group_as(uuid, uuid, public.commitment_level),
+  public.join_or_create_group_as(uuid, uuid, uuid, public.commitment_level),
+  public.leave_group_as(uuid, uuid),
+  public.sweep_groups()
+  to service_role;
+
+revoke execute on function
+  public.join_or_create_group(uuid, uuid, public.commitment_level),
+  public.join_group(uuid, public.commitment_level),
+  public.leave_group(uuid)
+  from public, anon;
+grant execute on function
+  public.join_or_create_group(uuid, uuid, public.commitment_level),
+  public.join_group(uuid, public.commitment_level),
+  public.leave_group(uuid)
+  to authenticated;
+
+-- Live updates and the minute-by-minute sweeper.
+alter publication supabase_realtime add table public.groups;
+
+create extension if not exists pg_cron with schema pg_catalog;
+select cron.schedule('sweep-groups', '* * * * *', 'select public.sweep_groups()');
+--- 20261102180937_sellers_and_bidding.sql
+create type public.seller_status as enum ('pending','verified','rejected','suspended');
+create type public.quotation_status as enum ('submitted','withdrawn');
+
+create table public.seller_profiles (
+  user_id uuid primary key references public.profiles (id) on delete cascade,
+  business_name text not null check (char_length(business_name) between 2 and 120),
+  gstin text check (gstin is null or gstin ~ '^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][1-9A-Z]Z[0-9A-Z]$'),
+  city text not null check (char_length(city) between 2 and 80),
+  phone text not null check (phone ~ '^[0-9+ -]{8,15}$'),
+  status public.seller_status not null default 'pending',
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+create trigger seller_profiles_set_updated_at before update on public.seller_profiles
+  for each row execute function public.set_updated_at();
+
+create table public.quotations (
+  id uuid primary key default gen_random_uuid(),
+  group_id uuid not null references public.groups (id) on delete cascade,
+  seller_id uuid not null references public.seller_profiles (user_id) on delete cascade,
+  status public.quotation_status not null default 'submitted',
+  delivery_days integer not null check (delivery_days between 1 and 90),
+  warranty_months integer not null check (warranty_months between 0 and 120),
+  notes text check (notes is null or char_length(notes) <= 500),
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  unique (group_id, seller_id)
+);
+create trigger quotations_set_updated_at before update on public.quotations
+  for each row execute function public.set_updated_at();
+
+create table public.quotation_tiers (
+  id uuid primary key default gen_random_uuid(),
+  quotation_id uuid not null references public.quotations (id) on delete cascade,
+  min_members integer not null check (min_members >= 1),
+  unit_price_paise bigint not null check (unit_price_paise > 0),
+  unique (quotation_id, min_members)
+);
+
+create table public.buyer_selections (
+  group_id uuid not null references public.groups (id) on delete cascade,
+  user_id uuid not null references public.profiles (id) on delete cascade,
+  quotation_id uuid not null references public.quotations (id) on delete cascade,
+  selected_at timestamptz not null default now(),
+  primary key (group_id, user_id)
+);
+
+-- Helper used by policies and functions.
+create function public.is_verified_seller() returns boolean
+language sql stable security definer set search_path = '' as $$
+  select exists (select 1 from public.seller_profiles
+                 where user_id = (select auth.uid()) and status = 'verified')
+$$;
+revoke execute on function public.is_verified_seller() from public, anon;
+grant execute on function public.is_verified_seller() to authenticated;
+
+-- Row level security: reads only; every write goes through the functions below.
+alter table public.seller_profiles enable row level security;
+alter table public.quotations enable row level security;
+alter table public.quotation_tiers enable row level security;
+alter table public.buyer_selections enable row level security;
+
+create policy "seller_read_own" on public.seller_profiles
+  for select to authenticated using (user_id = (select auth.uid()) or public.is_admin());
+
+-- Sellers see only their own quotes while bidding; members see all submitted quotes once locked.
+create policy "quotations_read" on public.quotations
+  for select to authenticated using (
+    seller_id = (select auth.uid())
+    or public.is_admin()
+    or (status = 'submitted' and exists (
+      select 1 from public.group_members gm
+      join public.groups g on g.id = gm.group_id
+      where gm.group_id = quotations.group_id
+        and gm.user_id = (select auth.uid())
+        and gm.left_at is null
+        and g.status in ('locked','completed')))
+  );
+
+-- Tiers follow the visibility of their quotation.
+create policy "tiers_read" on public.quotation_tiers
+  for select to authenticated using (
+    exists (select 1 from public.quotations q where q.id = quotation_tiers.quotation_id)
+  );
+
+create policy "selection_read_own" on public.buyer_selections
+  for select to authenticated using (user_id = (select auth.uid()) or public.is_admin());
+
+revoke all on public.seller_profiles, public.quotations, public.quotation_tiers, public.buyer_selections
+  from anon, authenticated;
+grant select on public.seller_profiles, public.quotations, public.quotation_tiers, public.buyer_selections
+  to authenticated;
+
+-- Public seller names for offer cards (no phone, no GSTIN).
+create view public.sellers_public as
+  select user_id, business_name, city from public.seller_profiles where status = 'verified';
+grant select on public.sellers_public to authenticated;
+
+-- Seller applies (or re-applies after rejection).
+create function public.apply_as_seller(p_business_name text, p_gstin text, p_city text, p_phone text)
+returns void language plpgsql security definer set search_path = '' as $$
+begin
+  if (select auth.uid()) is null then raise exception 'UNAUTHENTICATED'; end if;
+  insert into public.seller_profiles (user_id, business_name, gstin, city, phone)
+    values ((select auth.uid()), p_business_name, nullif(upper(trim(p_gstin)), ''), p_city, p_phone)
+  on conflict (user_id) do update
+    set business_name = excluded.business_name, gstin = excluded.gstin,
+        city = excluded.city, phone = excluded.phone, status = 'pending'
+    where public.seller_profiles.status in ('pending','rejected');
+end $$;
+
+-- Admin verifies, rejects or suspends.
+create function public.admin_set_seller_status(p_user_id uuid, p_status public.seller_status)
+returns void language plpgsql security definer set search_path = '' as $$
+begin
+  if not public.is_admin() then raise exception 'FORBIDDEN'; end if;
+  update public.seller_profiles set status = p_status where user_id = p_user_id;
+  if not found then raise exception 'SELLER_NOT_FOUND'; end if;
+end $$;
+
+-- Submit or replace a quotation. Tiers: min_members ascending, price strictly falling.
+create function public.submit_quotation(
+  p_group_id uuid, p_delivery_days integer, p_warranty_months integer, p_notes text, p_tiers jsonb
+) returns uuid language plpgsql security definer set search_path = '' as $$
+declare
+  g public.groups;
+  q_id uuid;
+  t jsonb;
+  mn integer; pr bigint;
+  prev_min integer := 0; prev_price bigint := null; first_min integer := null;
+begin
+  if (select auth.uid()) is null then raise exception 'UNAUTHENTICATED'; end if;
+  if not public.is_verified_seller() then raise exception 'NOT_VERIFIED_SELLER'; end if;
+
+  select * into g from public.groups where id = p_group_id for share;
+  if not found then raise exception 'GROUP_NOT_FOUND'; end if;
+  if g.status <> 'bidding' or g.bidding_deadline_at <= now() then raise exception 'BIDDING_CLOSED'; end if;
+
+  if jsonb_typeof(p_tiers) <> 'array' or jsonb_array_length(p_tiers) not between 1 and 5 then
+    raise exception 'INVALID_TIERS';
+  end if;
+  for t in select e.value from jsonb_array_elements(p_tiers) with ordinality as e(value, ord) order by e.ord loop
+    mn := (t->>'min_members')::integer;
+    pr := (t->>'unit_price_paise')::bigint;
+    if mn is null or pr is null or mn < 1 or pr < 1 or mn <= prev_min
+       or (prev_price is not null and pr >= prev_price) then
+      raise exception 'INVALID_TIERS';
+    end if;
+    if first_min is null then first_min := mn; end if;
+    prev_min := mn; prev_price := pr;
+  end loop;
+  -- The first tier must be reachable by the group's minimum.
+  if first_min > g.min_members then raise exception 'INVALID_TIERS'; end if;
+
+  insert into public.quotations (group_id, seller_id, delivery_days, warranty_months, notes)
+    values (p_group_id, (select auth.uid()), p_delivery_days, p_warranty_months, nullif(trim(p_notes), ''))
+  on conflict (group_id, seller_id) do update
+    set status = 'submitted', delivery_days = excluded.delivery_days,
+        warranty_months = excluded.warranty_months, notes = excluded.notes
+  returning id into q_id;
+
+  delete from public.quotation_tiers where quotation_id = q_id;
+  insert into public.quotation_tiers (quotation_id, min_members, unit_price_paise)
+    select q_id, x.min_members, x.unit_price_paise
+    from jsonb_to_recordset(p_tiers) as x(min_members integer, unit_price_paise bigint);
+  return q_id;
+end $$;
+
+create function public.withdraw_quotation(p_group_id uuid)
+returns void language plpgsql security definer set search_path = '' as $$
+begin
+  if (select auth.uid()) is null then raise exception 'UNAUTHENTICATED'; end if;
+  update public.quotations q set status = 'withdrawn'
+    from public.groups g
+    where q.group_id = p_group_id and q.seller_id = (select auth.uid())
+      and g.id = q.group_id and g.status = 'bidding';
+  if not found then raise exception 'QUOTE_NOT_FOUND'; end if;
+end $$;
+
+-- A group member picks one offer (can change until the selection deadline).
+create function public.select_offer(p_group_id uuid, p_quotation_id uuid)
+returns void language plpgsql security definer set search_path = '' as $$
+declare g public.groups;
+begin
+  if (select auth.uid()) is null then raise exception 'UNAUTHENTICATED'; end if;
+  select * into g from public.groups where id = p_group_id;
+  if not found then raise exception 'GROUP_NOT_FOUND'; end if;
+  if g.status <> 'locked' or g.selection_deadline_at <= now() then raise exception 'SELECTION_CLOSED'; end if;
+  if not exists (select 1 from public.group_members
+                 where group_id = p_group_id and user_id = (select auth.uid()) and left_at is null) then
+    raise exception 'NOT_MEMBER';
+  end if;
+  if not exists (select 1 from public.quotations
+                 where id = p_quotation_id and group_id = p_group_id and status = 'submitted') then
+    raise exception 'OFFER_NOT_FOUND';
+  end if;
+  insert into public.buyer_selections (group_id, user_id, quotation_id)
+    values (p_group_id, (select auth.uid()), p_quotation_id)
+  on conflict (group_id, user_id) do update
+    set quotation_id = excluded.quotation_id, selected_at = now();
+end $$;
+
+revoke execute on function
+  public.apply_as_seller(text, text, text, text),
+  public.admin_set_seller_status(uuid, public.seller_status),
+  public.submit_quotation(uuid, integer, integer, text, jsonb),
+  public.withdraw_quotation(uuid),
+  public.select_offer(uuid, uuid)
+  from public, anon;
+grant execute on function
+  public.apply_as_seller(text, text, text, text),
+  public.admin_set_seller_status(uuid, public.seller_status),
+  public.submit_quotation(uuid, integer, integer, text, jsonb),
+  public.withdraw_quotation(uuid),
+  public.select_offer(uuid, uuid)
+  to authenticated;
+
+-- Sweeper v2: groups with offers lock (member count frozen); the rest expire.
+create or replace function public.sweep_groups() returns jsonb
+language plpgsql security definer set search_path = '' as $$
+declare a integer; b integer; c integer; d integer; e integer;
+begin
+  update public.groups set status = 'bidding'
+    where status in ('open','full') and join_deadline_at <= now() and member_count >= min_members;
+  get diagnostics a = row_count;
+
+  update public.groups set status = 'cancelled'
+    where status = 'open' and join_deadline_at <= now() and member_count < min_members;
+  get diagnostics b = row_count;
+
+  update public.groups g set status = 'locked', locked_member_count = g.member_count
+    where g.status = 'bidding' and g.bidding_deadline_at <= now()
+      and exists (select 1 from public.quotations q where q.group_id = g.id and q.status = 'submitted');
+  get diagnostics c = row_count;
+
+  update public.groups set status = 'expired_no_offers'
+    where status = 'bidding' and bidding_deadline_at <= now();
+  get diagnostics d = row_count;
+
+  update public.groups set status = 'completed'
+    where status = 'locked' and selection_deadline_at <= now();
+  get diagnostics e = row_count;
+
+  return jsonb_build_object('to_bidding', a, 'cancelled', b, 'locked', c,
+                            'expired_no_offers', d, 'completed', e);
+end $$;
+--- 20261103093218_notifications_and_orders.sql
+create table public.notifications (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid not null references public.profiles (id) on delete cascade,
+  kind text not null,
+  title text not null,
+  body text not null,
+  link text,
+  created_at timestamptz not null default now(),
+  read_at timestamptz
+);
+create index notifications_user_idx on public.notifications (user_id, created_at desc);
+
+alter table public.notifications enable row level security;
+create policy "notifications_read_own" on public.notifications
+  for select to authenticated using (user_id = (select auth.uid()));
+revoke all on public.notifications from anon, authenticated;
+grant select on public.notifications to authenticated;
+
+create function public.mark_notifications_read() returns void
+language plpgsql security definer set search_path = '' as $$
+begin
+  if (select auth.uid()) is null then raise exception 'UNAUTHENTICATED'; end if;
+  update public.notifications set read_at = now()
+    where user_id = (select auth.uid()) and read_at is null;
+end $$;
+revoke execute on function public.mark_notifications_read() from public, anon;
+grant execute on function public.mark_notifications_read() to authenticated;
+
+-- Tell a seller when an admin verifies them.
+create or replace function public.admin_set_seller_status(p_user_id uuid, p_status public.seller_status)
+returns void language plpgsql security definer set search_path = '' as $$
+begin
+  if not public.is_admin() then raise exception 'FORBIDDEN'; end if;
+  update public.seller_profiles set status = p_status where user_id = p_user_id;
+  if not found then raise exception 'SELLER_NOT_FOUND'; end if;
+  if p_status = 'verified' then
+    insert into public.notifications (user_id, kind, title, body, link)
+    values (p_user_id, 'seller_verified', 'You are verified', 'You can now bid on groups.', '/seller');
+  end if;
+end $$;
+
+-- Sweeper v3: same transitions as before, now with notifications.
+create or replace function public.sweep_groups() returns jsonb
+language plpgsql security definer set search_path = '' as $$
+declare a integer; b integer; c integer; d integer; e integer;
+begin
+  with moved as (
+    update public.groups g set status = 'bidding'
+    where g.status in ('open','full') and g.join_deadline_at <= now() and g.member_count >= g.min_members
+    returning g.id, g.variant_id
+  ), named as (
+    select m.id, p.name from moved m
+    join public.product_variants v on v.id = m.variant_id
+    join public.products p on p.id = v.product_id
+  ), to_members as (
+    insert into public.notifications (user_id, kind, title, body, link)
+    select gm.user_id, 'group_bidding', 'Sellers are bidding',
+           'Your group for ' || n.name || ' reached its minimum. Sellers are now sending offers.',
+           '/groups/' || n.id
+    from named n join public.group_members gm on gm.group_id = n.id and gm.left_at is null
+    returning 1
+  ), to_sellers as (
+    insert into public.notifications (user_id, kind, title, body, link)
+    select sp.user_id, 'bidding_open', 'New group to bid on',
+           n.name || ' has a group open for bidding.', '/seller/groups/' || n.id
+    from named n cross join public.seller_profiles sp where sp.status = 'verified'
+    returning 1
+  )
+  select count(*) into a from moved;
+
+  with moved as (
+    update public.groups g set status = 'cancelled'
+    where g.status = 'open' and g.join_deadline_at <= now() and g.member_count < g.min_members
+    returning g.id, g.variant_id
+  ), named as (
+    select m.id, p.name from moved m
+    join public.product_variants v on v.id = m.variant_id
+    join public.products p on p.id = v.product_id
+  ), to_members as (
+    insert into public.notifications (user_id, kind, title, body, link)
+    select gm.user_id, 'group_cancelled', 'Group cancelled',
+           'Your group for ' || n.name || ' did not reach its minimum number of buyers.', '/groups/' || n.id
+    from named n join public.group_members gm on gm.group_id = n.id and gm.left_at is null
+    returning 1
+  )
+  select count(*) into b from moved;
+
+  with moved as (
+    update public.groups g set status = 'locked', locked_member_count = g.member_count
+    where g.status = 'bidding' and g.bidding_deadline_at <= now()
+      and exists (select 1 from public.quotations q where q.group_id = g.id and q.status = 'submitted')
+    returning g.id, g.variant_id
+  ), named as (
+    select m.id, p.name from moved m
+    join public.product_variants v on v.id = m.variant_id
+    join public.products p on p.id = v.product_id
+  ), to_members as (
+    insert into public.notifications (user_id, kind, title, body, link)
+    select gm.user_id, 'group_locked', 'Offers are ready',
+           'Compare the offers for ' || n.name || ' and choose one.', '/groups/' || n.id
+    from named n join public.group_members gm on gm.group_id = n.id and gm.left_at is null
+    returning 1
+  ), to_sellers as (
+    insert into public.notifications (user_id, kind, title, body, link)
+    select q.seller_id, 'bidding_closed', 'Bidding closed',
+           'Buyers can now choose between the offers for ' || n.name || '.', '/seller/quotes'
+    from named n join public.quotations q on q.group_id = n.id and q.status = 'submitted'
+    returning 1
+  )
+  select count(*) into c from moved;
+
+  with moved as (
+    update public.groups g set status = 'expired_no_offers'
+    where g.status = 'bidding' and g.bidding_deadline_at <= now()
+    returning g.id, g.variant_id
+  ), named as (
+    select m.id, p.name from moved m
+    join public.product_variants v on v.id = m.variant_id
+    join public.products p on p.id = v.product_id
+  ), to_members as (
+    insert into public.notifications (user_id, kind, title, body, link)
+    select gm.user_id, 'group_expired', 'Group closed',
+           'No seller sent an offer for ' || n.name || '.', '/groups/' || n.id
+    from named n join public.group_members gm on gm.group_id = n.id and gm.left_at is null
+    returning 1
+  )
+  select count(*) into d from moved;
+
+  update public.groups set status = 'completed'
+    where status = 'locked' and selection_deadline_at <= now();
+  get diagnostics e = row_count;
+
+  return jsonb_build_object('to_bidding', a, 'cancelled', b, 'locked', c,
+                            'expired_no_offers', d, 'completed', e);
+end $$;
+
+-- Buyer's orders: only after selection closed. Seller contact is revealed here.
+create function public.my_orders()
+returns table (
+  group_id uuid, product_name text, variant_label text, seller_name text,
+  seller_phone text, seller_city text, unit_price_paise bigint, delivery_days integer
+)
+language sql stable security definer set search_path = '' as $$
+  select g.id, p.name, v.label, sp.business_name, sp.phone, sp.city,
+    (select t.unit_price_paise from public.quotation_tiers t
+      where t.quotation_id = q.id and t.min_members <= coalesce(g.locked_member_count, g.member_count)
+      order by t.min_members desc limit 1),
+    q.delivery_days
+  from public.buyer_selections bs
+  join public.quotations q on q.id = bs.quotation_id and q.status = 'submitted'
+  join public.groups g on g.id = bs.group_id
+  join public.product_variants v on v.id = g.variant_id
+  join public.products p on p.id = v.product_id
+  join public.seller_profiles sp on sp.user_id = q.seller_id
+  where bs.user_id = (select auth.uid()) and g.status = 'completed'
+  order by g.selection_deadline_at desc
+$$;
+
+-- Seller's orders: buyers who chose this seller, after selection closed.
+create function public.seller_orders()
+returns table (
+  group_id uuid, product_name text, variant_label text, buyer_name text,
+  buyer_email text, unit_price_paise bigint, selected_at timestamptz
+)
+language sql stable security definer set search_path = '' as $$
+  select g.id, p.name, v.label,
+    coalesce(nullif(pr.full_name, ''), 'Buyer'), u.email::text,
+    (select t.unit_price_paise from public.quotation_tiers t
+      where t.quotation_id = q.id and t.min_members <= coalesce(g.locked_member_count, g.member_count)
+      order by t.min_members desc limit 1),
+    bs.selected_at
+  from public.buyer_selections bs
+  join public.quotations q on q.id = bs.quotation_id and q.status = 'submitted'
+  join public.groups g on g.id = bs.group_id
+  join public.product_variants v on v.id = g.variant_id
+  join public.products p on p.id = v.product_id
+  join public.profiles pr on pr.id = bs.user_id
+  join auth.users u on u.id = bs.user_id
+  where q.seller_id = (select auth.uid()) and g.status = 'completed'
+  order by bs.selected_at desc
+$$;
+
+revoke execute on function public.my_orders(), public.seller_orders() from public, anon;
+grant execute on function public.my_orders(), public.seller_orders() to authenticated;
+
+=== WEB + SHARED SOURCE ===
+--- apps\web\src\app\(admin)\admin\catalog\page.tsx
+import type { Metadata } from "next";
+import { z } from "@cc/shared";
+import { ActionForm } from "@/components/ui/ActionForm";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+import {
+  createProductAction,
+  createVariantAction,
+  toggleActiveAction,
+} from "@/lib/catalogAdminActions";
+import { formatPaiseAsINR } from "@/lib/money";
+import { requireAdmin } from "@/lib/requireAdmin";
+
+export const metadata: Metadata = { title: "Catalog manager" };
+export const dynamic = "force-dynamic";
+
+const categoriesSchema = z.array(
+  z.object({ id: z.string(), name: z.string(), slug: z.string(), is_active: z.boolean() }),
+);
+const productsSchema = z.array(
+  z.object({
+    id: z.string(),
+    brand: z.string(),
+    name: z.string(),
+    is_active: z.boolean(),
+    product_variants: z.array(
+      z.object({
+        id: z.string(),
+        sku: z.string(),
+        label: z.string(),
+        mrp_paise: z.number().int(),
+        is_active: z.boolean(),
+      }),
+    ),
+  }),
+);
+
+const field = "w-full rounded-lg border border-line bg-card px-3 py-2 text-sm";
+const labelClass = "mb-1 block text-xs font-semibold text-ink-500";
+
+function ToggleForm({
+  table,
+  id,
+  active,
+}: {
+  table: "categories" | "products" | "product_variants";
+  id: string;
+  active: boolean;
+}) {
+  return (
+    <ActionForm action={toggleActiveAction} className="inline">
+      <input type="hidden" name="table" value={table} />
+      <input type="hidden" name="id" value={id} />
+      <input type="hidden" name="next" value={String(!active)} />
+      <button type="submit" className="text-xs font-semibold text-accent-600 hover:underline">
+        {active ? "Deactivate" : "Activate"}
+      </button>
+    </ActionForm>
+  );
+}
+
+export default async function AdminCatalogPage() {
+  const supabase = await requireAdmin();
+  const [catRes, prodRes] = await Promise.all([
+    supabase.from("categories").select("id, name, slug, is_active").order("sort_order"),
+    supabase
+      .from("products")
+      .select("id, brand, name, is_active, product_variants(id, sku, label, mrp_paise, is_active)")
+      .order("name"),
+  ]);
+  if (catRes.error || prodRes.error) throw new Error("Could not load the catalog.");
+  const categories = categoriesSchema.parse(catRes.data);
+  const products = productsSchema.parse(prodRes.data);
+
+  return (
+    <div className="space-y-10">
+      <h1 className="font-display text-3xl font-semibold tracking-tight">Catalog manager</h1>
+
+      <section
+        aria-labelledby="cat-h"
+        className="rounded-2xl border border-line bg-card p-6 shadow-card"
+      >
+        <h2 id="cat-h" className="font-semibold">
+          Categories
+        </h2>
+        <ul className="mt-3 divide-y divide-line text-sm">
+          {categories.map((c) => (
+            <li key={c.id} className="flex items-center justify-between py-2">
+              <span>
+                {c.name} <span className="text-ink-300">({c.is_active ? "active" : "hidden"})</span>
+              </span>
+              <ToggleForm table="categories" id={c.id} active={c.is_active} />
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <div className="grid gap-6 lg:grid-cols-2">
+        <section
+          aria-labelledby="np-h"
+          className="rounded-2xl border border-line bg-card p-6 shadow-card"
+        >
+          <h2 id="np-h" className="font-semibold">
+            Add product
+          </h2>
+          <ActionForm action={createProductAction} className="mt-4 space-y-3">
+            <div>
+              <label htmlFor="categoryId" className={labelClass}>
+                Category
+              </label>
+              <select id="categoryId" name="categoryId" required className={field}>
+                {categories.map((c) => (
+                  <option key={c.id} value={c.id}>
+                    {c.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label htmlFor="brand" className={labelClass}>
+                Brand
+              </label>
+              <input id="brand" name="brand" required className={field} />
+            </div>
+            <div>
+              <label htmlFor="name" className={labelClass}>
+                Product name
+              </label>
+              <input id="name" name="name" required className={field} />
+            </div>
+            <div>
+              <label htmlFor="description" className={labelClass}>
+                Description (optional)
+              </label>
+              <input id="description" name="description" className={field} />
+            </div>
+            <button type="submit" className={buttonClasses("primary")}>
+              Add product
+            </button>
+          </ActionForm>
+        </section>
+
+        <section
+          aria-labelledby="nv-h"
+          className="rounded-2xl border border-line bg-card p-6 shadow-card"
+        >
+          <h2 id="nv-h" className="font-semibold">
+            Add variant
+          </h2>
+          <ActionForm action={createVariantAction} className="mt-4 space-y-3">
+            <div>
+              <label htmlFor="productId" className={labelClass}>
+                Product
+              </label>
+              <select id="productId" name="productId" required className={field}>
+                {products.map((p) => (
+                  <option key={p.id} value={p.id}>
+                    {p.brand} {p.name}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label htmlFor="sku" className={labelClass}>
+                SKU
+              </label>
+              <input
+                id="sku"
+                name="sku"
+                required
+                placeholder="DEMO-PH1-512-RED"
+                className={field}
+              />
+            </div>
+            <div>
+              <label htmlFor="label" className={labelClass}>
+                Label
+              </label>
+              <input id="label" name="label" required placeholder="512 GB, Red" className={field} />
+            </div>
+            <div>
+              <label htmlFor="priceRupees" className={labelClass}>
+                Reference price (MRP) in rupees
+              </label>
+              <input
+                id="priceRupees"
+                name="priceRupees"
+                type="number"
+                step="0.01"
+                min="1"
+                required
+                className={field}
+              />
+            </div>
+            <div>
+              <label htmlFor="attributes" className={labelClass}>
+                Attributes (JSON, optional)
+              </label>
+              <input
+                id="attributes"
+                name="attributes"
+                placeholder='{"storage_gb":512}'
+                className={field}
+              />
+            </div>
+            <button type="submit" className={buttonClasses("primary")}>
+              Add variant
+            </button>
+          </ActionForm>
+        </section>
+      </div>
+
+      <section aria-labelledby="pl-h" className="space-y-4">
+        <h2 id="pl-h" className="font-semibold">
+          Products and variants
+        </h2>
+        {products.map((p) => (
+          <div key={p.id} className="rounded-2xl border border-line bg-card p-5 shadow-card">
+            <div className="flex items-center justify-between">
+              <p className="font-semibold">
+                {p.brand} {p.name}{" "}
+                <span className="text-xs font-normal text-ink-300">
+                  ({p.is_active ? "active" : "hidden"})
+                </span>
+              </p>
+              <ToggleForm table="products" id={p.id} active={p.is_active} />
+            </div>
+            <ul className="mt-3 divide-y divide-line text-sm">
+              {p.product_variants.map((v) => (
+                <li key={v.id} className="flex items-center justify-between py-2">
+                  <span>
+                    {v.label} Â· {v.sku} Â· {formatPaiseAsINR(v.mrp_paise)}{" "}
+                    <span className="text-ink-300">({v.is_active ? "active" : "hidden"})</span>
+                  </span>
+                  <ToggleForm table="product_variants" id={v.id} active={v.is_active} />
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </section>
+    </div>
+  );
+}
+--- apps\web\src\app\(admin)\admin\sellers\page.tsx
+import type { Metadata } from "next";
+import { ActionForm } from "@/components/ui/ActionForm";
+import { requireAdmin } from "@/lib/requireAdmin";
+import { setSellerStatusAction } from "@/lib/sellerActions";
+
+export const metadata: Metadata = { title: "Sellers" };
+export const dynamic = "force-dynamic";
+
+function StatusButton({
+  userId,
+  status,
+  label,
+}: {
+  userId: string;
+  status: string;
+  label: string;
+}) {
+  return (
+    <ActionForm action={setSellerStatusAction} className="inline">
+      <input type="hidden" name="userId" value={userId} />
+      <input type="hidden" name="status" value={status} />
+      <button type="submit" className="text-xs font-semibold text-accent-600 hover:underline">
+        {label}
+      </button>
+    </ActionForm>
+  );
+}
+
+export default async function AdminSellersPage() {
+  const supabase = await requireAdmin();
+  const { data, error } = await supabase
+    .from("seller_profiles")
+    .select("user_id, business_name, gstin, city, phone, status, created_at")
+    .order("created_at", { ascending: false });
+  if (error) throw new Error("Could not load sellers.");
+
+  return (
+    <div className="space-y-6">
+      <h1 className="font-display text-3xl font-semibold tracking-tight">Sellers</h1>
+      {(data ?? []).length === 0 ? (
+        <p className="text-ink-500">No seller applications yet.</p>
+      ) : null}
+      <ul className="space-y-3">
+        {(data ?? []).map((s) => (
+          <li key={s.user_id} className="rounded-2xl border border-line bg-card p-5 shadow-card">
+            <p className="font-semibold">
+              {s.business_name}{" "}
+              <span className="text-xs font-normal text-ink-300">({s.status})</span>
+            </p>
+            <p className="text-sm text-ink-500">
+              {s.city} Â· {s.phone} Â· GSTIN: {s.gstin ?? "not given"}
+            </p>
+            <div className="mt-2 flex gap-4">
+              <StatusButton userId={s.user_id} status="verified" label="Verify" />
+              <StatusButton userId={s.user_id} status="rejected" label="Reject" />
+              <StatusButton userId={s.user_id} status="suspended" label="Suspend" />
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+--- apps\web\src\app\(admin)\admin\page.tsx
+import type { Metadata } from "next";
+import { AreaPlaceholder } from "@/components/domain/AreaPlaceholder";
+import { requireAdmin } from "@/lib/auth";
+
+export const metadata: Metadata = { title: "Admin console" };
+export const dynamic = "force-dynamic";
+
+export default async function AdminConsolePage() {
+  // Phase 3 adds multi-factor authentication on top of the admin role.
+  await requireAdmin("/admin");
+
+  return (
+    <AreaPlaceholder
+      title="Admin console"
+      description="The seller verification queue, category manager, group monitor and audit log will appear here."
+      availableIn="Phase 3 and Phase 5"
+    />
+  );
+}
+--- apps\web\src\app\(admin)\layout.tsx
+import type { ReactNode } from "react";
+import { AreaShell } from "@/components/layout/AreaShell";
+import { requireAdmin } from "@/lib/requireAdmin";
+
+export default async function AdminLayout({ children }: { children: ReactNode }) {
+  await requireAdmin();
+  return (
+    <AreaShell
+      areaLabel="Admin"
+      links={[
+        { href: "/", label: "Home" },
+        { href: "/admin", label: "Admin console" },
+        { href: "/admin/catalog", label: "Catalog" },
+        { href: "/admin/sellers", label: "Sellers" },
+      ]}
+    >
+      {children}
+    </AreaShell>
+  );
+}
+--- apps\web\src\app\(buyer)\dashboard\page.tsx
+import type { Metadata } from "next";
+import { AreaPlaceholder } from "@/components/domain/AreaPlaceholder";
+import { getProfile, requireUser } from "@/lib/auth";
+
+export const metadata: Metadata = { title: "Buyer dashboard" };
+export const dynamic = "force-dynamic";
+
+export default async function BuyerDashboardPage() {
+  const user = await requireUser("/dashboard");
+  const profile = await getProfile(user.id);
+  const name = profile?.full_name ?? user.email ?? "there";
+
+  return (
+    <div className="space-y-8">
+      <section className="rounded-2xl border border-line bg-card p-6 shadow-card">
+        <h1 className="font-display text-2xl font-semibold tracking-tight">Welcome, {name}</h1>
+        <dl className="mt-4 grid gap-4 text-sm sm:grid-cols-2">
+          <div>
+            <dt className="text-ink-500">Email</dt>
+            <dd className="mt-0.5 font-medium">{user.email}</dd>
+          </div>
+          <div>
+            <dt className="text-ink-500">Account type</dt>
+            <dd className="mt-0.5 font-medium capitalize">{profile?.role ?? "buyer"}</dd>
+          </div>
+        </dl>
+      </section>
+
+      <AreaPlaceholder
+        title="Your groups and offers"
+        description="Your groups, offers to review and orders will appear here."
+        availableIn="Phase 4 (groups) and Phase 9 (orders)"
+      />
+    </div>
+  );
+}
+--- apps\web\src\app\(buyer)\layout.tsx
+import type { ReactNode } from "react";
+import { AreaShell } from "@/components/layout/AreaShell";
+
+// Phase 2 adds the real auth guard here (buyer role required).
+export default function BuyerLayout({ children }: { children: ReactNode }) {
+  return (
+    <AreaShell
+      links={[
+        { href: "/", label: "Home" },
+        { href: "/dashboard", label: "Dashboard" },
+      ]}
+    >
+      {children}
+    </AreaShell>
+  );
+}
+--- apps\web\src\app\(public)\catalog\[category]\page.tsx
+--- apps\web\src\app\(public)\catalog\page.tsx
+import type { Metadata } from "next";
+import Link from "next/link";
+import { listCategories } from "@/lib/catalog";
+
+export const metadata: Metadata = { title: "Catalog" };
+export const dynamic = "force-dynamic";
+
+export default async function CatalogPage() {
+  const categories = await listCategories();
+
+  return (
+    <div className="space-y-8">
+      <header className="max-w-2xl">
+        <h1 className="font-display text-3xl font-semibold tracking-tight">Catalog</h1>
+        <p className="mt-3 text-ink-500">
+          Choose a category, then the exact variant you want. Groups form around one exact variant,
+          so everyone in the group buys the very same thing.
+        </p>
+      </header>
+
+      {categories.length === 0 ? (
+        <p className="text-ink-500">No categories are available yet.</p>
+      ) : (
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {categories.map((category) => (
+            <li key={category.id}>
+              <Link
+                href={`/catalog/${category.slug}`}
+                className="block h-full rounded-2xl border border-line bg-card p-6 shadow-card transition-colors hover:border-accent-500"
+              >
+                <h2 className="font-semibold">{category.name}</h2>
+                {category.description ? (
+                  <p className="mt-2 text-sm text-ink-500">{category.description}</p>
+                ) : null}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+--- apps\web\src\app\(public)\groups\[id]\page.tsx
+--- apps\web\src\app\(public)\groups\page.tsx
+import type { Metadata } from "next";
+import Link from "next/link";
+import { AutoRefresh } from "@/components/domain/AutoRefresh";
+import { Countdown } from "@/components/domain/Countdown";
+import { GroupProgress } from "@/components/domain/GroupProgress";
+import { listActiveGroups, STATUS_LABELS } from "@/lib/groups";
+
+export const metadata: Metadata = { title: "Groups" };
+export const dynamic = "force-dynamic";
+
+export default async function GroupsPage() {
+  const groups = await listActiveGroups();
+
+  return (
+    <div className="space-y-8">
+      <AutoRefresh />
+      <header className="max-w-2xl">
+        <h1 className="font-display text-3xl font-semibold tracking-tight">Active groups</h1>
+        <p className="mt-3 text-ink-500">
+          Join a group for the exact variant you want. Joining is free and is not a purchase.
+        </p>
+      </header>
+
+      {groups.length === 0 ? (
+        <p className="text-ink-500">
+          No active groups yet.{" "}
+          <Link href="/catalog" className="font-semibold text-accent-600">
+            Browse the catalog
+          </Link>{" "}
+          and be the first to start one.
+        </p>
+      ) : (
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {groups.map((g) => (
+            <li key={g.id}>
+              <Link
+                href={`/groups/${g.id}`}
+                className="block h-full rounded-2xl border border-line bg-card p-6 shadow-card transition-colors hover:border-accent-500"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink-500">
+                  {g.variant.product.brand} Â· {g.region.name}
+                </p>
+                <h2 className="mt-1 font-semibold">{g.variant.product.name}</h2>
+                <p className="text-sm text-ink-500">{g.variant.label}</p>
+                <div className="mt-4">
+                  <GroupProgress
+                    memberCount={g.member_count}
+                    minMembers={g.min_members}
+                    maxMembers={g.max_members}
+                  />
+                </div>
+                <p className="mt-3 flex justify-between text-xs text-ink-500">
+                  <span>{STATUS_LABELS[g.status]}</span>
+                  {g.status === "open" ? <Countdown target={g.join_deadline_at} /> : null}
+                </p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+--- apps\web\src\app\(public)\login\page.tsx
+import type { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { AuthForm } from "@/components/domain/AuthForm";
+import { getCurrentUser } from "@/lib/auth";
+import { safeRedirectPath } from "@/lib/authForm";
+import { loginAction } from "@/lib/authActions";
+
+export const metadata: Metadata = { title: "Log in" };
+export const dynamic = "force-dynamic";
+
+export default async function LoginPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ next?: string | string[] }>;
+}) {
+  const { next: rawNext } = await searchParams;
+  const next = safeRedirectPath(Array.isArray(rawNext) ? rawNext[0] : rawNext);
+
+  if (await getCurrentUser()) redirect(next);
+
+  return <AuthForm mode="login" action={loginAction} next={next} />;
+}
+--- apps\web\src\app\(public)\my\groups\page.tsx
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Countdown } from "@/components/domain/Countdown";
+import { GroupProgress } from "@/components/domain/GroupProgress";
+import { STATUS_LABELS, type GroupStatus } from "@/lib/groups";
+import { formatPaiseAsINR } from "@/lib/money";
+import { listMyGroups } from "@/lib/myGroups";
+
+export const metadata: Metadata = { title: "My groups" };
+export const dynamic = "force-dynamic";
+
+export default async function MyGroupsPage() {
+  const rows = await listMyGroups();
+
+  return (
+    <div className="space-y-8">
+      <header className="max-w-2xl">
+        <h1 className="font-display text-3xl font-semibold tracking-tight">My groups</h1>
+        <p className="mt-2 text-ink-500">Groups you joined, and the offer you chose in each.</p>
+      </header>
+
+      {rows.length === 0 ? (
+        <p className="text-ink-500">
+          You have not joined any group yet.{" "}
+          <Link href="/catalog" className="font-semibold text-accent-600">
+            Browse the catalog
+          </Link>
+          .
+        </p>
+      ) : (
+        <ul className="space-y-4">
+          {rows.map((r) => (
+            <li
+              key={r.groupId}
+              className="max-w-2xl rounded-2xl border border-line bg-card p-6 shadow-card"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-ink-500">
+                    {r.brand}
+                  </p>
+                  <Link href={`/groups/${r.groupId}`} className="font-semibold hover:underline">
+                    {r.productName}
+                  </Link>
+                  <p className="text-sm text-ink-500">{r.variantLabel}</p>
+                </div>
+                <span className="rounded-full bg-accent-50 px-3 py-1 text-xs font-semibold text-accent-700">
+                  {STATUS_LABELS[r.status as GroupStatus] ?? r.status}
+                </span>
+              </div>
+              <div className="mt-4">
+                <GroupProgress
+                  memberCount={r.memberCount}
+                  minMembers={r.minMembers}
+                  maxMembers={null}
+                />
+              </div>
+              {r.status === "open" ? (
+                <p className="mt-3 text-sm text-ink-500">
+                  Joining closes in <Countdown target={r.joinDeadline} />
+                </p>
+              ) : null}
+              {r.chosen ? (
+                <p className="mt-3 text-sm">
+                  Your choice: <span className="font-semibold">{r.chosen.sellerName}</span>
+                  {r.chosen.unitPricePaise !== null ? (
+                    <>
+                      {" "}
+                      at{" "}
+                      <span className="font-semibold">
+                        {formatPaiseAsINR(r.chosen.unitPricePaise)}
+                      </span>
+                    </>
+                  ) : null}
+                  , delivery in {r.chosen.deliveryDays} days.
+                </p>
+              ) : r.status === "locked" ? (
+                <p className="mt-3 text-sm font-semibold text-accent-600">
+                  <Link href={`/groups/${r.groupId}`}>Offers are ready. Choose one â†’</Link>
+                </p>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+--- apps\web\src\app\(public)\my\orders\page.tsx
+import type { Metadata } from "next";
+import { formatPaiseAsINR } from "@/lib/money";
+import { listMyOrders } from "@/lib/orders";
+
+export const metadata: Metadata = { title: "My orders" };
+export const dynamic = "force-dynamic";
+
+export default async function MyOrdersPage() {
+  const orders = await listMyOrders();
+
+  return (
+    <div className="max-w-2xl space-y-6">
+      <header>
+        <h1 className="font-display text-3xl font-semibold tracking-tight">My orders</h1>
+        <p className="mt-2 text-ink-500">
+          Once selection closes, you see the seller you chose. Contact them directly. Payment is
+          between you and the seller.
+        </p>
+      </header>
+      {orders.length === 0 ? (
+        <p className="text-ink-500">
+          No finished orders yet. They appear after the selection period ends.
+        </p>
+      ) : (
+        <ul className="space-y-4">
+          {orders.map((o) => (
+            <li key={o.group_id} className="rounded-2xl border border-line bg-card p-6 shadow-card">
+              <p className="font-semibold">{o.product_name}</p>
+              <p className="text-sm text-ink-500">{o.variant_label}</p>
+              <p className="mt-3 text-sm">
+                Price:{" "}
+                <span className="font-semibold">
+                  {o.unit_price_paise !== null ? formatPaiseAsINR(o.unit_price_paise) : "n/a"}
+                </span>
+                {" Â· "}Delivery in {o.delivery_days} days
+              </p>
+              <p className="mt-1 text-sm">
+                Seller: <span className="font-semibold">{o.seller_name}</span>, {o.seller_city}.
+                Phone: {o.seller_phone}
+              </p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+--- apps\web\src\app\(public)\notifications\page.tsx
+import type { Metadata } from "next";
+import Link from "next/link";
+import { AutoRefresh } from "@/components/domain/AutoRefresh";
+import { ActionForm } from "@/components/ui/ActionForm";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+import { markNotificationsReadAction } from "@/lib/notificationActions";
+import { listNotifications } from "@/lib/notifications";
+
+export const metadata: Metadata = { title: "Alerts" };
+export const dynamic = "force-dynamic";
+
+export default async function NotificationsPage() {
+  const rows = await listNotifications();
+  const unread = rows.filter((r) => r.read_at === null).length;
+
+  return (
+    <div className="max-w-2xl space-y-6">
+      <AutoRefresh />
+      <header className="flex items-end justify-between gap-4">
+        <div>
+          <h1 className="font-display text-3xl font-semibold tracking-tight">Alerts</h1>
+          <p className="mt-1 text-ink-500">{unread} unread</p>
+        </div>
+        {unread > 0 ? (
+          <ActionForm action={markNotificationsReadAction}>
+            <button type="submit" className={buttonClasses("secondary")}>
+              Mark all read
+            </button>
+          </ActionForm>
+        ) : null}
+      </header>
+
+      {rows.length === 0 ? (
+        <p className="text-ink-500">
+          Nothing yet. You will see updates when your groups move forward.
+        </p>
+      ) : (
+        <ul className="space-y-3">
+          {rows.map((n) => {
+            const card = (
+              <div className="rounded-2xl border border-line bg-card p-5 shadow-card">
+                <p className={n.read_at === null ? "font-semibold" : "text-ink-500"}>
+                  {n.read_at === null ? "â— " : ""}
+                  {n.title}
+                </p>
+                <p className="mt-1 text-sm text-ink-500">{n.body}</p>
+                <p className="mt-2 text-xs text-ink-300">
+                  {new Date(n.created_at).toLocaleString("en-IN")}
+                </p>
+              </div>
+            );
+            return <li key={n.id}>{n.link ? <Link href={n.link}>{card}</Link> : card}</li>;
+          })}
+        </ul>
+      )}
+    </div>
+  );
+}
+--- apps\web\src\app\(public)\signup\page.tsx
+import type { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { AuthForm } from "@/components/domain/AuthForm";
+import { getCurrentUser } from "@/lib/auth";
+import { safeRedirectPath } from "@/lib/authForm";
+import { signupAction } from "@/lib/authActions";
+
+export const metadata: Metadata = { title: "Create account" };
+export const dynamic = "force-dynamic";
+
+export default async function SignupPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ next?: string | string[] }>;
+}) {
+  const { next: rawNext } = await searchParams;
+  const next = safeRedirectPath(Array.isArray(rawNext) ? rawNext[0] : rawNext);
+
+  if (await getCurrentUser()) redirect(next);
+
+  return <AuthForm mode="signup" action={signupAction} next={next} />;
+}
+--- apps\web\src\app\(public)\layout.tsx
+import type { ReactNode } from "react";
+import { AreaShell } from "@/components/layout/AreaShell";
+
+export default function PublicLayout({ children }: { children: ReactNode }) {
+  return (
+    <AreaShell
+      links={[
+        { href: "/my/groups", label: "My groups" },
+        { href: "/notifications", label: "Alerts" },
+        { href: "/my/orders", label: "My orders" },
+        { href: "/catalog", label: "Catalog" },
+        { href: "/groups", label: "Groups" },
+        { href: "/dashboard", label: "Buyer area" },
+        { href: "/seller", label: "Sell" },
+      ]}
+    >
+      {children}
+    </AreaShell>
+  );
+}
+--- apps\web\src\app\(public)\page.tsx
+import Link from "next/link";
+import { ApiStatus } from "@/components/domain/ApiStatus";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+
+const steps = [
+  {
+    title: "Pick the exact product",
+    text: "Choose the precise variant you want, so everyone in the group buys the very same thing.",
+  },
+  {
+    title: "Join or start a group",
+    text: "Join buyers who want it too. The more people join, the better the offers can get.",
+  },
+  {
+    title: "Compare offers, choose freely",
+    text: "Verified sellers bid in sealed quotations. You see the true total cost and decide for yourself, with no obligation.",
+  },
+] as const;
+
+export default function HomePage() {
+  return (
+    <div className="space-y-16">
+      <section className="max-w-3xl pt-4 sm:pt-10">
+        <p className="text-sm font-semibold text-accent-600">Collective buying, made fair</p>
+        <h1 className="mt-3 font-display text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+          Buy together. Let sellers compete for your group.
+        </h1>
+        <p className="mt-5 max-w-2xl text-lg text-ink-500">
+          Join buyers who want the exact same product. Verified sellers bid for your combined
+          demand, and every buyer accepts or declines on their own.
+        </p>
+        <div className="mt-8 flex flex-wrap gap-3">
+          <Link href="/dashboard" className={buttonClasses("primary")}>
+            Open buyer area
+          </Link>
+          <Link href="/seller" className={buttonClasses("secondary")}>
+            Sell on Collective Commerce
+          </Link>
+        </div>
+      </section>
+
+      <section aria-labelledby="status-heading" className="max-w-3xl">
+        <h2 id="status-heading" className="mb-3 text-sm font-semibold text-ink-500">
+          Development status
+        </h2>
+        <ApiStatus />
+      </section>
+
+      <section aria-labelledby="how-heading">
+        <h2 id="how-heading" className="font-display text-2xl font-semibold tracking-tight">
+          How it works
+        </h2>
+        <ol className="mt-6 grid gap-4 sm:grid-cols-3">
+          {steps.map((step, index) => (
+            <li key={step.title} className="rounded-2xl border border-line bg-card p-6 shadow-card">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-accent-50 text-sm font-semibold text-accent-700">
+                {index + 1}
+              </span>
+              <h3 className="mt-4 font-semibold">{step.title}</h3>
+              <p className="mt-2 text-sm text-ink-500">{step.text}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+    </div>
+  );
+}
+--- apps\web\src\app\(seller)\seller\groups\[id]\page.tsx
+--- apps\web\src\app\(seller)\seller\orders\page.tsx
+import type { Metadata } from "next";
+import Link from "next/link";
+import { formatPaiseAsINR } from "@/lib/money";
+import { listSellerOrders } from "@/lib/orders";
+
+export const metadata: Metadata = { title: "Orders" };
+export const dynamic = "force-dynamic";
+
+export default async function SellerOrdersPage() {
+  const orders = await listSellerOrders();
+
+  return (
+    <div className="max-w-2xl space-y-6">
+      <header>
+        <Link href="/seller" className="text-sm font-semibold text-accent-600">
+          â† Seller portal
+        </Link>
+        <h1 className="mt-2 font-display text-3xl font-semibold tracking-tight">Orders</h1>
+        <p className="mt-2 text-ink-500">
+          Buyers who chose your offer. Contact details appear after the selection period ends.
+          Collect payment directly from the buyer.
+        </p>
+      </header>
+      {orders.length === 0 ? (
+        <p className="text-ink-500">No orders yet.</p>
+      ) : (
+        <ul className="space-y-4">
+          {orders.map((o, i) => (
+            <li
+              key={`${o.group_id}-${i}`}
+              className="rounded-2xl border border-line bg-card p-6 shadow-card"
+            >
+              <p className="font-semibold">
+                {o.product_name} Â· {o.variant_label}
+              </p>
+              <p className="mt-2 text-sm">
+                Buyer: <span className="font-semibold">{o.buyer_name}</span> Â· {o.buyer_email}
+              </p>
+              <p className="mt-1 text-sm">
+                Price:{" "}
+                <span className="font-semibold">
+                  {o.unit_price_paise !== null ? formatPaiseAsINR(o.unit_price_paise) : "n/a"}
+                </span>
+              </p>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+--- apps\web\src\app\(seller)\seller\quotes\page.tsx
+import type { Metadata } from "next";
+import Link from "next/link";
+import { STATUS_LABELS, type GroupStatus } from "@/lib/groups";
+import { formatPaiseAsINR } from "@/lib/money";
+import { listMyQuotes } from "@/lib/myQuotes";
+
+export const metadata: Metadata = { title: "My quotations" };
+export const dynamic = "force-dynamic";
+
+export default async function MyQuotesPage() {
+  const rows = await listMyQuotes();
+
+  return (
+    <div className="space-y-6">
+      <header>
+        <Link href="/seller" className="text-sm font-semibold text-accent-600">
+          â† Seller portal
+        </Link>
+        <h1 className="mt-2 font-display text-3xl font-semibold tracking-tight">My quotations</h1>
+      </header>
+
+      {rows.length === 0 ? (
+        <p className="text-ink-500">You have not quoted any group yet.</p>
+      ) : (
+        <ul className="space-y-4">
+          {rows.map((r) => (
+            <li
+              key={r.groupId}
+              className="max-w-2xl rounded-2xl border border-line bg-card p-6 shadow-card"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <p className="font-semibold">{r.productName}</p>
+                  <p className="text-sm text-ink-500">{r.variantLabel}</p>
+                </div>
+                <span className="rounded-full bg-accent-50 px-3 py-1 text-xs font-semibold text-accent-700">
+                  {r.quoteStatus === "withdrawn"
+                    ? "Withdrawn"
+                    : (STATUS_LABELS[r.groupStatus as GroupStatus] ?? r.groupStatus)}
+                </span>
+              </div>
+              <p className="mt-3 text-sm">
+                {r.memberCount} buyers Â· your price now:{" "}
+                <span className="font-semibold">
+                  {r.currentPricePaise !== null
+                    ? formatPaiseAsINR(r.currentPricePaise)
+                    : "no tier reached yet"}
+                </span>
+              </p>
+              <ul className="mt-2 space-y-0.5 text-sm text-ink-500">
+                {r.tiers.map((t) => (
+                  <li key={t.minMembers}>
+                    {t.minMembers}+ buyers: {formatPaiseAsINR(t.unitPricePaise)}
+                  </li>
+                ))}
+              </ul>
+              {r.groupStatus === "bidding" && r.quoteStatus === "submitted" ? (
+                <Link
+                  href={`/seller/groups/${r.groupId}`}
+                  className="mt-3 inline-block text-sm font-semibold text-accent-600"
+                >
+                  Edit quotation â†’
+                </Link>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+--- apps\web\src\app\(seller)\seller\page.tsx
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Countdown } from "@/components/domain/Countdown";
+import { ActionForm } from "@/components/ui/ActionForm";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+import { requireUser } from "@/lib/requireUser";
+import { applyAsSellerAction } from "@/lib/sellerActions";
+import { getMySeller, listBiddingGroups } from "@/lib/sellers";
+
+export const metadata: Metadata = { title: "Seller portal" };
+export const dynamic = "force-dynamic";
+
+const field = "w-full rounded-lg border border-line bg-card px-3 py-2 text-sm";
+const labelClass = "mb-1 block text-xs font-semibold text-ink-500";
+
+export default async function SellerPage() {
+  const { user } = await requireUser();
+  const seller = await getMySeller(user.id);
+
+  if (!seller || seller.status === "rejected") {
+    return (
+      <div className="max-w-xl space-y-6">
+        <h1 className="font-display text-3xl font-semibold tracking-tight">Become a seller</h1>
+        {seller ? (
+          <p role="alert" className="text-sm text-danger-600">
+            Your last application was rejected. You can correct the details and apply again.
+          </p>
+        ) : null}
+        <ActionForm
+          action={applyAsSellerAction}
+          className="space-y-3 rounded-2xl border border-line bg-card p-6 shadow-card"
+        >
+          <div>
+            <label htmlFor="businessName" className={labelClass}>
+              Business name
+            </label>
+            <input id="businessName" name="businessName" required className={field} />
+          </div>
+          <div>
+            <label htmlFor="gstin" className={labelClass}>
+              GSTIN (optional, 15 characters)
+            </label>
+            <input id="gstin" name="gstin" maxLength={15} className={field} />
+          </div>
+          <div>
+            <label htmlFor="city" className={labelClass}>
+              City
+            </label>
+            <input id="city" name="city" defaultValue="Chennai" required className={field} />
+          </div>
+          <div>
+            <label htmlFor="phone" className={labelClass}>
+              Phone
+            </label>
+            <input id="phone" name="phone" required className={field} />
+          </div>
+          <button type="submit" className={buttonClasses("primary")}>
+            Apply
+          </button>
+        </ActionForm>
+      </div>
+    );
+  }
+
+  if (seller.status !== "verified") {
+    return (
+      <div className="max-w-xl space-y-3">
+        <h1 className="font-display text-3xl font-semibold tracking-tight">
+          {seller.business_name}
+        </h1>
+        <p className="text-ink-500">
+          {seller.status === "pending"
+            ? "Your application is under review. You can bid once an admin verifies you."
+            : "Your seller account is suspended. Contact support."}
+        </p>
+      </div>
+    );
+  }
+
+  const groups = await listBiddingGroups();
+  return (
+    <div className="space-y-8">
+      <header>
+        <h1 className="font-display text-3xl font-semibold tracking-tight">
+          {seller.business_name}
+        </h1>
+        <p className="mt-1 text-ink-500">
+          Groups open for bidding. Sellers see member counts only, never buyer identities.
+        </p>
+      </header>
+      {groups.length === 0 ? (
+        <p className="text-ink-500">No groups are in the bidding stage right now.</p>
+      ) : (
+        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {groups.map((g) => (
+            <li key={g.id}>
+              <Link
+                href={`/seller/groups/${g.id}`}
+                className="block h-full rounded-2xl border border-line bg-card p-6 shadow-card hover:border-accent-500"
+              >
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink-500">
+                  {g.variant.product.brand} Â· {g.region.name}
+                </p>
+                <h2 className="mt-1 font-semibold">{g.variant.product.name}</h2>
+                <p className="text-sm text-ink-500">{g.variant.label}</p>
+                <p className="mt-3 text-sm">
+                  <span className="font-semibold">{g.member_count}</span> buyers Â· bidding closes in{" "}
+                  <Countdown target={g.bidding_deadline_at} />
+                </p>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+--- apps\web\src\app\(seller)\layout.tsx
+import type { ReactNode } from "react";
+import { AreaShell } from "@/components/layout/AreaShell";
+
+// Phase 2 adds the real auth guard here (seller membership required).
+export default function SellerLayout({ children }: { children: ReactNode }) {
+  return (
+    <AreaShell
+      areaLabel="Seller"
+      links={[
+        { href: "/", label: "Home" },
+        { href: "/seller/orders", label: "Orders" },
+        { href: "/seller", label: "Seller dashboard" },
+        { href: "/seller/quotes", label: "My quotations" },
+      ]}
+    >
+      {children}
+    </AreaShell>
+  );
+}
+--- apps\web\src\app\error.tsx
+"use client";
+
+import { buttonClasses } from "@/components/ui/buttonStyles";
+
+export default function GlobalError({
+  error,
+  reset,
+}: {
+  error: Error & { digest?: string };
+  reset: () => void;
+}) {
+  return (
+    <main className="mx-auto flex min-h-dvh max-w-lg flex-col items-center justify-center px-6 text-center">
+      <h1 className="font-display text-2xl font-semibold">Something went wrong</h1>
+      <p className="mt-3 text-ink-500">
+        An unexpected error occurred. You can try again, and if it keeps happening please come back
+        a little later.
+      </p>
+      {error.digest ? <p className="mt-2 text-xs text-ink-300">Reference: {error.digest}</p> : null}
+      <button type="button" onClick={reset} className={`${buttonClasses("primary")} mt-6`}>
+        Try again
+      </button>
+    </main>
+  );
+}
+--- apps\web\src\app\globals.css
+@import "tailwindcss";
+
+/* Fonts are injected by next/font as CSS variables on <html>. */
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: var(--font-sora), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@theme {
+  /* Surfaces */
+  --color-surface: #fafafb;
+  --color-card: #ffffff;
+  --color-line: #e6e8ee;
+
+  /* Text (dark neutral) */
+  --color-ink-900: #11131a;
+  --color-ink-700: #2b2f3a;
+  --color-ink-500: #5b6070;
+  --color-ink-300: #a4a8b5;
+
+  /* The one accent colour */
+  --color-accent-50: #eef1ff;
+  --color-accent-100: #dde3ff;
+  --color-accent-500: #4a5cf0;
+  --color-accent-600: #3a49d6;
+  --color-accent-700: #2f3bb0;
+
+  /* Status colours (used sparingly) */
+  --color-success-50: #e7f6ef;
+  --color-success-600: #12805c;
+  --color-warning-50: #fdf3e1;
+  --color-warning-600: #a8650d;
+  --color-danger-50: #fdecef;
+  --color-danger-600: #c4314b;
+
+  --shadow-card: 0 1px 2px rgb(17 19 26 / 0.04), 0 8px 24px rgb(17 19 26 / 0.05);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent-600);
+    outline-offset: 2px;
+  }
+}
+
+/* Motion is purposeful, and optional for people who ask for less of it (Part 8.1). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+--- apps\web\src\app\layout.tsx
+import type { Metadata, Viewport } from "next";
+import { Inter, Sora } from "next/font/google";
+import type { ReactNode } from "react";
+import { Providers } from "@/components/providers";
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const sora = Sora({ subsets: ["latin"], variable: "--font-sora", display: "swap" });
+
+export const metadata: Metadata = {
+  title: {
+    default: "Collective Commerce",
+    template: "%s Â· Collective Commerce",
+  },
+  description:
+    "Buy together. Verified sellers compete for your group, and you choose the offer that suits you.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#fafafb",
+};
+
+export default function RootLayout({ children }: { children: ReactNode }) {
+  return (
+    <html lang="en" className={`${inter.variable} ${sora.variable}`}>
+      <body className="min-h-dvh bg-surface font-sans text-ink-900 antialiased">
+        <a
+          href="#main"
+          className="sr-only rounded-lg bg-accent-600 px-4 py-2 text-sm font-semibold text-white focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50"
+        >
+          Skip to main content
+        </a>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}
+--- apps\web\src\app\not-found.tsx
+import Link from "next/link";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+
+export default function NotFound() {
+  return (
+    <main className="mx-auto flex min-h-dvh max-w-lg flex-col items-center justify-center px-6 text-center">
+      <p className="text-sm font-semibold text-accent-600">404</p>
+      <h1 className="mt-2 font-display text-2xl font-semibold">Page not found</h1>
+      <p className="mt-3 text-ink-500">The page you are looking for does not exist or has moved.</p>
+      <Link href="/" className={`${buttonClasses("primary")} mt-6`}>
+        Back to home
+      </Link>
+    </main>
+  );
+}
+--- apps\web\src\components\domain\ApiStatus.tsx
+"use client";
+
+import { useQuery } from "@tanstack/react-query";
+import { z } from "@cc/shared";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+import { apiGet } from "@/lib/apiClient";
+
+const healthSchema = z.object({
+  status: z.literal("ok"),
+  service: z.string(),
+  environment: z.string(),
+  uptimeSeconds: z.number(),
+  timestamp: z.string(),
+});
+
+export function ApiStatus() {
+  const { data, error, isPending, isError, refetch, isFetching } = useQuery({
+    queryKey: ["api-health"],
+    queryFn: ({ signal }) => apiGet("/health", healthSchema, signal),
+  });
+
+  let dotClass = "bg-ink-300 animate-pulse";
+  let title = "Checking API connectionâ€¦";
+  let detail: string | null = null;
+
+  if (data) {
+    dotClass = "bg-success-600";
+    title = "API online";
+    detail = `Environment: ${data.environment} Â· up ${data.uptimeSeconds}s`;
+  } else if (isError) {
+    dotClass = "bg-danger-600";
+    title = "Cannot reach the API";
+    detail = error instanceof Error ? error.message : "Unknown error";
+  }
+
+  return (
+    <div
+      role="status"
+      aria-live="polite"
+      className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-line bg-card p-5 shadow-card"
+    >
+      <div className="flex items-start gap-3">
+        <span
+          className={`mt-1.5 h-2.5 w-2.5 shrink-0 rounded-full ${dotClass}`}
+          aria-hidden="true"
+        />
+        <div>
+          <p className="font-semibold">{title}</p>
+          {detail ? <p className="text-sm text-ink-500">{detail}</p> : null}
+        </div>
+      </div>
+
+      {isError ? (
+        <button
+          type="button"
+          onClick={() => void refetch()}
+          disabled={isFetching}
+          className={buttonClasses("secondary")}
+        >
+          Try again
+        </button>
+      ) : null}
+      {isPending && !isError ? <span className="sr-only">Loading</span> : null}
+    </div>
+  );
+}
+--- apps\web\src\components\domain\AreaPlaceholder.tsx
+interface AreaPlaceholderProps {
+  title: string;
+  description: string;
+  availableIn: string;
+}
+
+/** Honest placeholder for areas that are built in later phases. */
+export function AreaPlaceholder({ title, description, availableIn }: AreaPlaceholderProps) {
+  return (
+    <section className="mx-auto max-w-xl rounded-2xl border border-dashed border-line bg-card p-8 text-center shadow-card">
+      <h1 className="font-display text-2xl font-semibold tracking-tight">{title}</h1>
+      <p className="mt-3 text-ink-500">{description}</p>
+      <p className="mt-5 inline-flex rounded-full bg-accent-50 px-3 py-1 text-xs font-semibold text-accent-700">
+        Arrives in {availableIn}
+      </p>
+    </section>
+  );
+}
+--- apps\web\src\components\domain\AuthForm.tsx
+"use client";
+
+import Link from "next/link";
+import { useActionState } from "react";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+import { inputClasses } from "@/components/ui/inputStyles";
+import { initialAuthFormState, type AuthFormState } from "@/lib/authForm";
+
+interface AuthFormProps {
+  mode: "login" | "signup";
+  action: (state: AuthFormState, formData: FormData) => Promise<AuthFormState>;
+  /** Where to go after success. Checked again on the server. */
+  next: string;
+}
+
+export function AuthForm({ mode, action, next }: AuthFormProps) {
+  const [state, formAction, isPending] = useActionState(action, initialAuthFormState);
+  const isSignup = mode === "signup";
+
+  return (
+    <div className="mx-auto w-full max-w-md rounded-2xl border border-line bg-card p-8 shadow-card">
+      <h1 className="font-display text-2xl font-semibold tracking-tight">
+        {isSignup ? "Create your account" : "Welcome back"}
+      </h1>
+      <p className="mt-2 text-sm text-ink-500">
+        {isSignup
+          ? "Join groups, compare offers and buy together."
+          : "Log in to see your groups and offers."}
+      </p>
+
+      <form action={formAction} className="mt-6 space-y-4" noValidate>
+        <input type="hidden" name="next" value={next} />
+
+        {isSignup ? (
+          <div>
+            <label htmlFor="fullName" className="mb-1.5 block text-sm font-medium">
+              Full name
+            </label>
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              autoComplete="name"
+              required
+              disabled={isPending}
+              className={inputClasses}
+            />
+          </div>
+        ) : null}
+
+        <div>
+          <label htmlFor="email" className="mb-1.5 block text-sm font-medium">
+            Email
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            required
+            disabled={isPending}
+            className={inputClasses}
+          />
+        </div>
+
+        <div>
+          <label htmlFor="password" className="mb-1.5 block text-sm font-medium">
+            Password
+          </label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            autoComplete={isSignup ? "new-password" : "current-password"}
+            required
+            minLength={isSignup ? 8 : undefined}
+            disabled={isPending}
+            className={inputClasses}
+          />
+          {isSignup ? <p className="mt-1.5 text-xs text-ink-500">At least 8 characters.</p> : null}
+        </div>
+
+        <div aria-live="polite">
+          {state.error ? (
+            <p role="alert" className="rounded-lg bg-danger-50 px-3 py-2 text-sm text-danger-600">
+              {state.error}
+            </p>
+          ) : null}
+          {state.notice ? (
+            <p
+              role="status"
+              className="rounded-lg bg-success-50 px-3 py-2 text-sm text-success-600"
+            >
+              {state.notice}
+            </p>
+          ) : null}
+        </div>
+
+        <button type="submit" disabled={isPending} className={`${buttonClasses("primary")} w-full`}>
+          {isPending ? "Please waitâ€¦" : isSignup ? "Create account" : "Log in"}
+        </button>
+      </form>
+
+      <p className="mt-6 text-center text-sm text-ink-500">
+        {isSignup ? "Already have an account? " : "New here? "}
+        <Link
+          href={isSignup ? "/login" : "/signup"}
+          className="font-semibold text-accent-600 hover:text-accent-700"
+        >
+          {isSignup ? "Log in" : "Create an account"}
+        </Link>
+      </p>
+    </div>
+  );
+}
+--- apps\web\src\components\domain\AutoRefresh.tsx
+"use client";
+
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+
+export function AutoRefresh({ seconds = 15 }: { seconds?: number }) {
+  const router = useRouter();
+  useEffect(() => {
+    const id = setInterval(() => router.refresh(), seconds * 1000);
+    return () => clearInterval(id);
+  }, [router, seconds]);
+  return null;
+}
+--- apps\web\src\components\domain\Countdown.tsx
+"use client";
+
+import { useEffect, useState } from "react";
+import { formatTimeLeft } from "@/lib/time";
+
+export function Countdown({ target }: { target: string }) {
+  const [label, setLabel] = useState<string>("â€¦");
+  useEffect(() => {
+    const tick = () => setLabel(formatTimeLeft(target));
+    tick();
+    const id = setInterval(tick, 30_000);
+    return () => clearInterval(id);
+  }, [target]);
+  return <span>{label}</span>;
+}
+--- apps\web\src\components\domain\GroupActions.tsx
+import { ActionForm } from "@/components/ui/ActionForm";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+import { joinGroupAction, joinOrCreateGroupAction, leaveGroupAction } from "@/lib/groupActions";
+import type { Group } from "@/lib/groups";
+
+interface GroupActionsProps {
+  group: Group;
+  isMember: boolean;
+}
+
+export function GroupActions({ group, isMember }: GroupActionsProps) {
+  const canLeave = ["open", "full", "bidding"].includes(group.status);
+
+  if (isMember) {
+    return (
+      <div>
+        <p className="text-sm font-semibold text-success-600">You are in this group.</p>
+        {canLeave ? (
+          <ActionForm action={leaveGroupAction} className="mt-3">
+            <input type="hidden" name="groupId" value={group.id} />
+            <button type="submit" className={buttonClasses("secondary")}>
+              Leave group
+            </button>
+          </ActionForm>
+        ) : null}
+      </div>
+    );
+  }
+
+  if (group.status === "open") {
+    return (
+      <ActionForm action={joinGroupAction} className="flex flex-wrap items-end gap-3">
+        <input type="hidden" name="groupId" value={group.id} />
+        <div>
+          <label htmlFor="commitment" className="mb-1 block text-xs font-semibold text-ink-500">
+            Your commitment
+          </label>
+          <select
+            id="commitment"
+            name="commitment"
+            className="rounded-lg border border-line bg-card px-3 py-2.5 text-sm"
+          >
+            <option value="interested">Interested (free, leave any time)</option>
+            <option value="committed">Committed (serious buyer)</option>
+          </select>
+        </div>
+        <button type="submit" className={buttonClasses("primary")}>
+          Join group
+        </button>
+      </ActionForm>
+    );
+  }
+
+  if (group.status === "full") {
+    return (
+      <ActionForm action={joinOrCreateGroupAction}>
+        <input type="hidden" name="variantId" value={group.variant.id} />
+        <input type="hidden" name="commitment" value="interested" />
+        <p className="mb-3 text-sm text-ink-500">
+          This group is full. We can put you in a new one.
+        </p>
+        <button type="submit" className={buttonClasses("primary")}>
+          Join the new group
+        </button>
+      </ActionForm>
+    );
+  }
+
+  const messages: Record<string, string> = {
+    bidding: "Joining is closed. Sellers are preparing their offers.",
+    locked: "The group is locked. Offers to choose from arrive in a later phase.",
+    completed: "This group has finished.",
+    cancelled: "This group was cancelled because it did not reach its minimum.",
+    expired_no_offers: "This group closed without any seller offers.",
+  };
+  return <p className="text-sm text-ink-500">{messages[group.status]}</p>;
+}
+--- apps\web\src\components\domain\GroupProgress.tsx
+interface GroupProgressProps {
+  memberCount: number;
+  minMembers: number;
+  maxMembers: number | null;
+}
+
+export function GroupProgress({ memberCount, minMembers, maxMembers }: GroupProgressProps) {
+  const target = maxMembers ?? Math.max(minMembers, memberCount);
+  const pct = Math.min(100, Math.round((memberCount / target) * 100));
+  const minPct = Math.min(100, Math.round((minMembers / target) * 100));
+  const remaining = Math.max(0, minMembers - memberCount);
+  const message =
+    remaining > 0
+      ? `${remaining} more buyer${remaining === 1 ? "" : "s"} needed to start bidding`
+      : "Minimum reached: verified sellers will be invited to bid";
+
+  return (
+    <div>
+      <div className="flex items-baseline justify-between text-sm">
+        <span className="font-semibold">{memberCount} joined</span>
+        <span className="text-ink-500">{maxMembers ? `max ${maxMembers}` : "no limit"}</span>
+      </div>
+      <div
+        role="progressbar"
+        aria-label="Group members"
+        aria-valuemin={0}
+        aria-valuemax={target}
+        aria-valuenow={memberCount}
+        className="relative mt-2 h-3 overflow-hidden rounded-full bg-accent-50"
+      >
+        <div
+          className="h-full rounded-full bg-accent-600 transition-[width] duration-500"
+          style={{ width: `${pct}%` }}
+        />
+        <div
+          className="absolute inset-y-0 w-0.5 bg-ink-900/40"
+          style={{ left: `${minPct}%` }}
+          aria-hidden="true"
+        />
+      </div>
+      <p className="mt-2 text-sm text-ink-500">{message}</p>
+    </div>
+  );
+}
+--- apps\web\src\components\domain\OfferComparison.tsx
+import { formatPaiseAsINR } from "@/lib/money";
+import type { Offer } from "@/lib/offers";
+import { effectiveTier, lowestIndex, nextTier } from "@/lib/tiers";
+
+export function OfferComparison({ members, offers }: { members: number; offers: Offer[] }) {
+  const prices = offers.map((o) => effectiveTier(o.tiers, members)?.unitPricePaise ?? null);
+  const best = lowestIndex(prices);
+
+  return (
+    <section aria-labelledby="cmp-h" className="max-w-2xl">
+      <h2 id="cmp-h" className="font-semibold">
+        Compare offers
+      </h2>
+      <div className="mt-3 overflow-x-auto rounded-2xl border border-line bg-card shadow-card">
+        <table className="w-full text-left text-sm">
+          <caption className="sr-only">Offers compared at {members} buyers</caption>
+          <thead>
+            <tr className="border-b border-line text-ink-500">
+              <th scope="col" className="px-4 py-3 font-medium">
+                Seller
+              </th>
+              <th scope="col" className="px-4 py-3 font-medium">
+                Price now
+              </th>
+              <th scope="col" className="px-4 py-3 font-medium">
+                Delivery
+              </th>
+              <th scope="col" className="px-4 py-3 font-medium">
+                Warranty
+              </th>
+              <th scope="col" className="px-4 py-3 font-medium">
+                Next tier
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {offers.map((o, i) => {
+              const upcoming = nextTier(o.tiers, members);
+              return (
+                <tr key={o.id} className="border-b border-line last:border-0">
+                  <td className="px-4 py-3 font-semibold">{o.sellerName}</td>
+                  <td className="px-4 py-3">
+                    {prices[i] !== null ? formatPaiseAsINR(prices[i] as number) : "Not unlocked"}
+                    {i === best ? (
+                      <span className="ml-2 rounded-full bg-accent-50 px-2 py-0.5 text-xs font-semibold text-accent-700">
+                        Lowest
+                      </span>
+                    ) : null}
+                  </td>
+                  <td className="px-4 py-3">{o.deliveryDays} days</td>
+                  <td className="px-4 py-3">{o.warrantyMonths} months</td>
+                  <td className="px-4 py-3 text-ink-500">
+                    {upcoming
+                      ? `${upcoming.minMembers}+ buyers: ${formatPaiseAsINR(upcoming.unitPricePaise)}`
+                      : "None"}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+--- apps\web\src\components\domain\OffersPanel.tsx
+import { ActionForm } from "@/components/ui/ActionForm";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+import { formatPaiseAsINR } from "@/lib/money";
+import { selectOfferAction } from "@/lib/offerActions";
+import type { Offer } from "@/lib/offers";
+import { effectiveTier } from "@/lib/tiers";
+
+interface OffersPanelProps {
+  groupId: string;
+  members: number;
+  offers: Offer[];
+  selectedId: string | null;
+  canSelect: boolean;
+}
+
+export function OffersPanel({ groupId, members, offers, selectedId, canSelect }: OffersPanelProps) {
+  return (
+    <section aria-labelledby="offers-h" className="max-w-2xl space-y-4">
+      <h2 id="offers-h" className="font-semibold">
+        Offers ({members} buyers locked in)
+      </h2>
+      {offers.map((o) => {
+        const unlocked = effectiveTier(o.tiers, members);
+        return (
+          <article key={o.id} className="rounded-2xl border border-line bg-card p-5 shadow-card">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="font-semibold">{o.sellerName}</p>
+                <p className="text-sm text-ink-500">
+                  {o.sellerCity} Â· delivery in {o.deliveryDays} days Â· {o.warrantyMonths} months
+                  warranty
+                </p>
+              </div>
+              <p className="text-right text-lg font-semibold">
+                {unlocked ? formatPaiseAsINR(unlocked.unitPricePaise) : "Not unlocked"}
+              </p>
+            </div>
+            <ul className="mt-3 space-y-1 text-sm">
+              {o.tiers.map((t) => (
+                <li
+                  key={t.minMembers}
+                  className={
+                    unlocked?.minMembers === t.minMembers
+                      ? "font-semibold text-success-600"
+                      : "text-ink-500"
+                  }
+                >
+                  {t.minMembers}+ buyers: {formatPaiseAsINR(t.unitPricePaise)}
+                  {unlocked?.minMembers === t.minMembers ? " (your group's price)" : ""}
+                </li>
+              ))}
+            </ul>
+            {o.notes ? <p className="mt-3 text-sm text-ink-500">{o.notes}</p> : null}
+            {canSelect ? (
+              <ActionForm action={selectOfferAction} className="mt-4">
+                <input type="hidden" name="groupId" value={groupId} />
+                <input type="hidden" name="quotationId" value={o.id} />
+                <button
+                  type="submit"
+                  className={buttonClasses(selectedId === o.id ? "secondary" : "primary")}
+                >
+                  {selectedId === o.id ? "Chosen âœ“" : "Choose this offer"}
+                </button>
+              </ActionForm>
+            ) : null}
+          </article>
+        );
+      })}
+      <p className="text-sm text-ink-500">
+        You pay the seller directly. The platform does not take payments. You can change your choice
+        until selection closes.
+      </p>
+    </section>
+  );
+}
+--- apps\web\src\components\layout\AreaShell.tsx
+import type { ReactNode } from "react";
+import { SiteFooter } from "./SiteFooter";
+import { SiteHeader, type NavLink } from "./SiteHeader";
+
+interface AreaShellProps {
+  areaLabel?: string;
+  links: NavLink[];
+  children: ReactNode;
+}
+
+export function AreaShell({ areaLabel, links, children }: AreaShellProps) {
+  return (
+    <div className="flex min-h-dvh flex-col">
+      <SiteHeader areaLabel={areaLabel} links={links} />
+      <main id="main" className="mx-auto w-full max-w-6xl flex-1 px-4 py-10 sm:px-6">
+        {children}
+      </main>
+      <SiteFooter />
+    </div>
+  );
+}
+--- apps\web\src\components\layout\AuthMenu.tsx
+import Link from "next/link";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+import { getCurrentUser } from "@/lib/auth";
+import { signOutAction } from "@/lib/authActions";
+import { isSupabaseConfigured } from "@/lib/supabaseEnv";
+
+export async function AuthMenu() {
+  // No keys (for example in CI builds): show nothing instead of failing.
+  if (!isSupabaseConfigured()) return null;
+
+  const user = await getCurrentUser();
+
+  if (!user) {
+    return (
+      <div className="flex items-center gap-2">
+        <Link href="/login" className={buttonClasses("ghost")}>
+          Log in
+        </Link>
+        <Link href="/signup" className={buttonClasses("primary")}>
+          Sign up
+        </Link>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex items-center gap-3">
+      <span className="hidden max-w-48 truncate text-sm text-ink-500 sm:inline">{user.email}</span>
+      <form action={signOutAction}>
+        <button type="submit" className={buttonClasses("secondary")}>
+          Log out
+        </button>
+      </form>
+    </div>
+  );
+}
+--- apps\web\src\components\layout\Logo.tsx
+/** The brand mark: three rising tier segments. */
+export function Logo({ className = "h-7 w-7" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 32 32" className={className} aria-hidden="true" focusable="false">
+      <rect width="32" height="32" rx="8" className="fill-accent-600" />
+      <rect x="6" y="17" width="5" height="9" rx="1.5" fill="#fff" opacity="0.55" />
+      <rect x="13.5" y="12" width="5" height="14" rx="1.5" fill="#fff" opacity="0.8" />
+      <rect x="21" y="6" width="5" height="20" rx="1.5" fill="#fff" />
+    </svg>
+  );
+}
+--- apps\web\src\components\layout\SiteFooter.tsx
+export function SiteFooter() {
+  return (
+    <footer className="border-t border-line bg-card">
+      <div className="mx-auto w-full max-w-6xl space-y-2 px-4 py-8 text-sm text-ink-500 sm:px-6">
+        <p>
+          Collective Commerce is a marketplace. We never sell products ourselves: every purchase is
+          between a buyer and a verified seller.
+        </p>
+        <p>Prices, names and figures shown during development are illustrative sample data.</p>
+        <p>
+          Grievance officer: contact details will be published here before launch, as required by
+          the E-Commerce Rules.
+        </p>
+      </div>
+    </footer>
+  );
+}
+--- apps\web\src\components\layout\SiteHeader.tsx
+import Link from "next/link";
+import { AuthMenu } from "./AuthMenu";
+import { Logo } from "./Logo";
+
+export interface NavLink {
+  href: string;
+  label: string;
+}
+
+interface SiteHeaderProps {
+  /** Shown as a small badge for the seller and admin areas. */
+  areaLabel?: string;
+  links: NavLink[];
+}
+
+export function SiteHeader({ areaLabel, links }: SiteHeaderProps) {
+  return (
+    <header className="sticky top-0 z-10 border-b border-line bg-surface/90 backdrop-blur">
+      <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-4 py-3 sm:px-6">
+        <Link href="/" className="flex items-center gap-2.5">
+          <Logo />
+          <span className="font-display text-base font-semibold tracking-tight">
+            Collective Commerce
+          </span>
+          {areaLabel ? (
+            <span className="rounded-full bg-accent-50 px-2.5 py-0.5 text-xs font-semibold text-accent-700">
+              {areaLabel}
+            </span>
+          ) : null}
+        </Link>
+
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <nav aria-label="Main">
+            <ul className="flex items-center gap-1">
+              {links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="rounded-lg px-3 py-2 text-sm font-medium text-ink-700 transition-colors hover:bg-accent-50 hover:text-accent-700"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <AuthMenu />
+        </div>
+      </div>
+    </header>
+  );
+}
+--- apps\web\src\components\ui\ActionForm.tsx
+"use client";
+
+import { useActionState, type ReactNode } from "react";
+import { initialActionState, type ActionState } from "@/lib/actionState";
+
+interface ActionFormProps {
+  action: (prev: ActionState, formData: FormData) => Promise<ActionState>;
+  children: ReactNode;
+  className?: string;
+}
+
+export function ActionForm({ action, children, className }: ActionFormProps) {
+  const [state, formAction, pending] = useActionState(action, initialActionState);
+  return (
+    <form action={formAction} className={className}>
+      <fieldset disabled={pending} className="contents">
+        {children}
+      </fieldset>
+      {state.error ? (
+        <p role="alert" className="mt-2 text-sm text-danger-600">
+          {state.error}
+        </p>
+      ) : null}
+      {state.notice ? (
+        <p role="status" className="mt-2 text-sm text-success-600">
+          {state.notice}
+        </p>
+      ) : null}
+    </form>
+  );
+}
+--- apps\web\src\components\ui\buttonStyles.ts
+const base =
+  "inline-flex items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-50";
+
+const variants = {
+  primary: "bg-accent-600 text-white hover:bg-accent-700",
+  secondary: "border border-line bg-card text-ink-900 hover:bg-accent-50",
+  ghost: "text-ink-700 hover:bg-accent-50",
+} as const;
+
+export type ButtonVariant = keyof typeof variants;
+
+/** Class names for buttons and button-looking links, so they look identical everywhere. */
+export function buttonClasses(variant: ButtonVariant = "primary"): string {
+  return `${base} ${variants[variant]}`;
+}
+--- apps\web\src\components\ui\inputStyles.ts
+/** Class names for text inputs, so every form field looks the same. */
+export const inputClasses =
+  "w-full rounded-lg border border-line bg-card px-3.5 py-2.5 text-sm text-ink-900 placeholder:text-ink-300 focus:border-accent-500 disabled:opacity-50";
+--- apps\web\src\components\providers.tsx
+"use client";
+
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useState, type ReactNode } from "react";
+
+export function Providers({ children }: { children: ReactNode }) {
+  // Created once per browser tab. Server state lives here (Part 5.2).
+  const [client] = useState(
+    () =>
+      new QueryClient({
+        defaultOptions: {
+          queries: { staleTime: 30_000, retry: 1, refetchOnWindowFocus: false },
+        },
+      }),
+  );
+
+  return <QueryClientProvider client={client}>{children}</QueryClientProvider>;
+}
+--- apps\web\src\lib\supabase\client.ts
+import { createBrowserClient } from "@supabase/ssr";
+import { getSupabaseEnv } from "@/lib/supabaseEnv";
+
+export function createSupabaseBrowserClient() {
+  const env = getSupabaseEnv();
+  return createBrowserClient(
+    env.NEXT_PUBLIC_SUPABASE_URL,
+    env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+  );
+}
+--- apps\web\src\lib\supabase\server.ts
+import { createServerClient } from "@supabase/ssr";
+import { cookies } from "next/headers";
+import { getSupabaseEnv } from "@/lib/supabaseEnv";
+
+export async function createSupabaseServerClient() {
+  const env = getSupabaseEnv();
+  const cookieStore = await cookies();
+
+  return createServerClient(
+    env.NEXT_PUBLIC_SUPABASE_URL,
+    env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+    {
+      cookies: {
+        getAll() {
+          return cookieStore.getAll();
+        },
+        setAll(cookiesToSet) {
+          try {
+            cookiesToSet.forEach(({ name, value, options }) =>
+              cookieStore.set(name, value, options),
+            );
+          } catch {
+            // Called from a Server Component, which cannot set cookies.
+            // The middleware refreshes the session instead, so this is safe to ignore.
+          }
+        },
+      },
+    },
+  );
+}
+--- apps\web\src\lib\supabase\updateSession.ts
+import { createServerClient } from "@supabase/ssr";
+import { NextResponse, type NextRequest } from "next/server";
+import { getSupabaseEnv, type SupabaseEnv } from "@/lib/supabaseEnv";
+
+/** Refreshes the login session cookie on each request. */
+export async function updateSession(request: NextRequest): Promise<NextResponse> {
+  let env: SupabaseEnv;
+  try {
+    env = getSupabaseEnv();
+  } catch (error) {
+    // Missing keys must not take the whole site down in development.
+    console.warn(error instanceof Error ? error.message : "Supabase is not configured");
+    return NextResponse.next({ request });
+  }
+
+  let response = NextResponse.next({ request });
+
+  const supabase = createServerClient(
+    env.NEXT_PUBLIC_SUPABASE_URL,
+    env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+    {
+      cookies: {
+        getAll() {
+          return request.cookies.getAll();
+        },
+        setAll(cookiesToSet) {
+          cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value));
+          response = NextResponse.next({ request });
+          cookiesToSet.forEach(({ name, value, options }) =>
+            response.cookies.set(name, value, options),
+          );
+        },
+      },
+    },
+  );
+
+  // Do not put any code between createServerClient and getUser.
+  await supabase.auth.getUser();
+
+  return response;
+}
+--- apps\web\src\lib\actionState.ts
+export type ActionState = { error: string | null; notice: string | null };
+export const initialActionState: ActionState = { error: null, notice: null };
+--- apps\web\src\lib\apiClient.ts
+import { apiErrorBodySchema, type z } from "@cc/shared";
+import { env } from "./env";
+
+export class ApiError extends Error {
+  readonly code: string;
+  readonly status: number;
+
+  constructor(code: string, message: string, status: number) {
+    super(message);
+    this.name = "ApiError";
+    this.code = code;
+    this.status = status;
+  }
+}
+
+/**
+ * GET a path from the API and validate the response with a Zod schema.
+ * `path` starts with "/" (for example "/health" or "/api/v1/me").
+ */
+export async function apiGet<T>(
+  path: string,
+  schema: z.ZodType<T>,
+  signal?: AbortSignal,
+): Promise<T> {
+  let response: Response;
+  try {
+    response = await fetch(`${env.NEXT_PUBLIC_API_URL}${path}`, {
+      headers: { Accept: "application/json" },
+      signal,
+    });
+  } catch {
+    throw new ApiError(
+      "NETWORK_ERROR",
+      "Cannot reach the server. Check your connection and try again.",
+      0,
+    );
+  }
+
+  const payload: unknown = await response.json().catch(() => null);
+
+  if (!response.ok) {
+    const parsed = apiErrorBodySchema.safeParse(payload);
+    if (parsed.success) {
+      throw new ApiError(parsed.data.error.code, parsed.data.error.message, response.status);
+    }
+    throw new ApiError(
+      "UNKNOWN_ERROR",
+      `Unexpected response (${response.status}).`,
+      response.status,
+    );
+  }
+
+  return schema.parse(payload);
+}
+--- apps\web\src\lib\auth.ts
+import { notFound, redirect } from "next/navigation";
+import { cache } from "react";
+import { z } from "@cc/shared";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+
+const profileSchema = z.object({
+  full_name: z.string().nullable(),
+  role: z.enum(["buyer", "admin"]),
+});
+
+export type Profile = z.infer<typeof profileSchema>;
+
+/**
+ * The signed-in user for this request, or null. getUser() asks Supabase to verify
+ * the session, so a forged cookie is not trusted. Cached per request.
+ */
+export const getCurrentUser = cache(async () => {
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase.auth.getUser();
+  return error ? null : data.user;
+});
+
+/** The user's own profile row (row level security allows only their own). */
+export async function getProfile(userId: string): Promise<Profile | null> {
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase
+    .from("profiles")
+    .select("full_name, role")
+    .eq("id", userId)
+    .maybeSingle();
+  if (error || !data) return null;
+
+  const parsed = profileSchema.safeParse(data);
+  return parsed.success ? parsed.data : null;
+}
+
+/** Sends visitors who are not logged in to /login, then back to `nextPath`. */
+export async function requireUser(nextPath: string) {
+  const user = await getCurrentUser();
+  if (!user) {
+    redirect(`/login?next=${encodeURIComponent(nextPath)}`);
+  }
+  return user;
+}
+
+/** Only admins pass. Everyone else sees the 404 page. */
+export async function requireAdmin(nextPath: string) {
+  const user = await requireUser(nextPath);
+  const profile = await getProfile(user.id);
+  if (profile?.role !== "admin") {
+    notFound();
+  }
+  return user;
+}
+--- apps\web\src\lib\authActions.ts
+"use server";
+
+import { redirect } from "next/navigation";
+import { safeRedirectPath, type AuthFormState } from "@/lib/authForm";
+import { loginSchema, signupSchema } from "@/lib/authSchemas";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+
+export async function loginAction(
+  _previous: AuthFormState,
+  formData: FormData,
+): Promise<AuthFormState> {
+  const parsed = loginSchema.safeParse({
+    email: formData.get("email"),
+    password: formData.get("password"),
+  });
+  if (!parsed.success) {
+    return { error: parsed.error.issues[0]?.message ?? "Check your details.", notice: null };
+  }
+
+  const supabase = await createSupabaseServerClient();
+  const { error } = await supabase.auth.signInWithPassword(parsed.data);
+  if (error) {
+    // One message for every failure, so attackers cannot tell which part was wrong.
+    return { error: "Incorrect email or password.", notice: null };
+  }
+
+  redirect(safeRedirectPath(formData.get("next")));
+}
+
+export async function signupAction(
+  _previous: AuthFormState,
+  formData: FormData,
+): Promise<AuthFormState> {
+  const parsed = signupSchema.safeParse({
+    fullName: formData.get("fullName"),
+    email: formData.get("email"),
+    password: formData.get("password"),
+  });
+  if (!parsed.success) {
+    return { error: parsed.error.issues[0]?.message ?? "Check your details.", notice: null };
+  }
+
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase.auth.signUp({
+    email: parsed.data.email,
+    password: parsed.data.password,
+    options: { data: { full_name: parsed.data.fullName } },
+  });
+  if (error) {
+    // Server-side only: the visitor still sees the generic message.
+    console.error("signup failed:", {
+      code: error.code,
+      status: error.status,
+      message: error.message,
+    });
+    return {
+      error: "We could not create your account. Try another email or a stronger password.",
+      notice: null,
+    };
+  }
+
+  // With email confirmation switched on there is no session yet.
+  if (!data.session) {
+    return { error: null, notice: "Check your email to confirm your account, then log in." };
+  }
+
+  redirect(safeRedirectPath(formData.get("next")));
+}
+
+export async function signOutAction(): Promise<void> {
+  const supabase = await createSupabaseServerClient();
+  await supabase.auth.signOut();
+  redirect("/");
+}
+--- apps\web\src\lib\authForm.ts
+export interface AuthFormState {
+  error: string | null;
+  notice: string | null;
+}
+
+export const initialAuthFormState: AuthFormState = { error: null, notice: null };
+
+/**
+ * Only allows paths inside this site. Anything else (other sites, "//host",
+ * backslashes, non-text values) falls back to a safe default.
+ */
+export function safeRedirectPath(value: unknown, fallback = "/dashboard"): string {
+  if (typeof value !== "string") return fallback;
+  if (!value.startsWith("/") || value.startsWith("//") || value.includes("\\")) return fallback;
+  return value;
+}
+--- apps\web\src\lib\authSchemas.ts
+import { z } from "@cc/shared";
+
+const email = z.string().trim().toLowerCase().email("Enter a valid email address.");
+
+export const loginSchema = z.object({
+  email,
+  password: z.string().min(1, "Enter your password."),
+});
+
+export const signupSchema = z.object({
+  fullName: z.string().trim().min(2, "Enter your full name.").max(100, "Your name is too long."),
+  email,
+  // 72 is the most characters the password hashing used by Supabase will read.
+  password: z
+    .string()
+    .min(8, "Password must be at least 8 characters.")
+    .max(72, "Password must be at most 72 characters."),
+});
+--- apps\web\src\lib\catalog.ts
+import { z } from "@cc/shared";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+
+const categorySchema = z.object({
+  id: z.string(),
+  slug: z.string(),
+  name: z.string(),
+  description: z.string().nullable(),
+});
+
+const variantSchema = z.object({
+  id: z.string(),
+  sku: z.string(),
+  label: z.string(),
+  mrp_paise: z.number().int(),
+  is_active: z.boolean(),
+});
+
+const productSchema = z.object({
+  id: z.string(),
+  slug: z.string(),
+  brand: z.string(),
+  name: z.string(),
+  description: z.string().nullable(),
+  product_variants: z.array(variantSchema),
+});
+
+export type Category = z.infer<typeof categorySchema>;
+export type Product = z.infer<typeof productSchema>;
+
+export async function listCategories(): Promise<Category[]> {
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase
+    .from("categories")
+    .select("id, slug, name, description")
+    .order("sort_order");
+  if (error) throw new Error("Could not load categories.");
+  return z.array(categorySchema).parse(data);
+}
+
+export async function getCategoryWithProducts(
+  slug: string,
+): Promise<{ category: Category; products: Product[] } | null> {
+  const supabase = await createSupabaseServerClient();
+
+  const { data: categoryRow, error: categoryError } = await supabase
+    .from("categories")
+    .select("id, slug, name, description")
+    .eq("slug", slug)
+    .maybeSingle();
+  if (categoryError) throw new Error("Could not load the category.");
+  if (!categoryRow) return null;
+  const category = categorySchema.parse(categoryRow);
+
+  const { data, error } = await supabase
+    .from("products")
+    .select(
+      "id, slug, brand, name, description, product_variants(id, sku, label, mrp_paise, is_active)",
+    )
+    .eq("category_id", category.id)
+    .order("name");
+  if (error) throw new Error("Could not load products.");
+
+  const products = z
+    .array(productSchema)
+    .parse(data)
+    .map((product) => ({
+      ...product,
+      product_variants: product.product_variants
+        .filter((variant) => variant.is_active)
+        .sort((a, b) => a.mrp_paise - b.mrp_paise),
+    }));
+
+  return { category, products };
+}
+--- apps\web\src\lib\catalogAdminActions.ts
+"use server";
+
+import { revalidatePath } from "next/cache";
+import { z } from "@cc/shared";
+import type { ActionState } from "@/lib/actionState";
+import { requireAdmin } from "@/lib/requireAdmin";
+import { slugify } from "@/lib/slug";
+
+const fail = (error: string): ActionState => ({ error, notice: null });
+const ok = (notice: string): ActionState => ({ error: null, notice });
+
+const productSchema = z.object({
+  categoryId: z.string().uuid("Choose a category."),
+  brand: z.string().trim().min(1, "Brand is required.").max(80),
+  name: z.string().trim().min(1, "Name is required.").max(120),
+  description: z.string().trim().max(500).optional(),
+});
+
+export async function createProductAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const supabase = await requireAdmin();
+  const parsed = productSchema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Invalid input.");
+
+  const { categoryId, brand, name, description } = parsed.data;
+  const { error } = await supabase.from("products").insert({
+    category_id: categoryId,
+    brand,
+    name,
+    slug: slugify(`${brand} ${name}`),
+    description: description || null,
+  });
+  if (error) {
+    console.error("create product failed:", error.code, error.message);
+    return fail(
+      error.code === "23505"
+        ? "A product with this name already exists."
+        : "Could not save the product.",
+    );
+  }
+  revalidatePath("/admin/catalog");
+  return ok(`Added ${brand} ${name}.`);
+}
+
+const variantSchema = z.object({
+  productId: z.string().uuid("Choose a product."),
+  sku: z
+    .string()
+    .trim()
+    .toUpperCase()
+    .regex(/^[A-Z0-9-]{3,40}$/, "SKU: 3-40 letters, digits or dashes."),
+  label: z.string().trim().min(1, "Label is required.").max(120),
+  priceRupees: z.coerce.number().positive("Price must be above zero.").max(10_000_000),
+  attributes: z.string().trim().optional(),
+});
+
+export async function createVariantAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const supabase = await requireAdmin();
+  const parsed = variantSchema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Invalid input.");
+
+  let attributes: unknown = {};
+  if (parsed.data.attributes) {
+    try {
+      attributes = JSON.parse(parsed.data.attributes);
+    } catch {
+      return fail('Attributes must be valid JSON, for example {"storage_gb":128}.');
+    }
+  }
+  const { error } = await supabase.from("product_variants").insert({
+    product_id: parsed.data.productId,
+    sku: parsed.data.sku,
+    label: parsed.data.label,
+    mrp_paise: Math.round(parsed.data.priceRupees * 100),
+    attributes,
+  });
+  if (error) {
+    console.error("create variant failed:", error.code, error.message);
+    return fail(
+      error.code === "23505" ? "This SKU already exists." : "Could not save the variant.",
+    );
+  }
+  revalidatePath("/admin/catalog");
+  return ok(`Added variant ${parsed.data.sku}.`);
+}
+
+const toggleSchema = z.object({
+  table: z.enum(["categories", "products", "product_variants"]),
+  id: z.string().uuid(),
+  next: z.enum(["true", "false"]),
+});
+
+export async function toggleActiveAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const supabase = await requireAdmin();
+  const parsed = toggleSchema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return fail("Invalid request.");
+
+  const { error } = await supabase
+    .from(parsed.data.table)
+    .update({ is_active: parsed.data.next === "true" })
+    .eq("id", parsed.data.id);
+  if (error) return fail("Could not update.");
+  revalidatePath("/admin/catalog");
+  revalidatePath("/catalog", "layout");
+  return ok("Saved.");
+}
+--- apps\web\src\lib\env.ts
+import { z } from "@cc/shared";
+function stripTrailingSlashes(value: string): string {
+  return value.replace(/\/+$/, "");
+}
+
+const webEnvSchema = z.object({
+  NEXT_PUBLIC_API_URL: z
+    .string()
+    .regex(/^https?:\/\/.+/i, "NEXT_PUBLIC_API_URL must start with http:// or https://")
+    .transform(stripTrailingSlashes),
+});
+
+export type WebEnv = z.infer<typeof webEnvSchema>;
+
+/** Validates the browser-visible environment. Throws a readable error when invalid. */
+export function parseWebEnv(source: Readonly<Record<string, string | undefined>>): WebEnv {
+  const result = webEnvSchema.safeParse(source);
+  if (!result.success) {
+    const lines = result.error.issues.map(
+      (issue) => `  - ${issue.path.map(String).join(".") || "(root)"}: ${issue.message}`,
+    );
+    throw new Error(`Invalid web environment configuration:\n${lines.join("\n")}`);
+  }
+  return result.data;
+}
+
+// NEXT_PUBLIC_* variables must be referenced literally so Next.js can inline them in the browser.
+// The localhost default is for development only: production must set the variable explicitly.
+export const env = parseWebEnv({
+  NEXT_PUBLIC_API_URL:
+    process.env.NEXT_PUBLIC_API_URL ??
+    (process.env.NODE_ENV === "production" ? undefined : "http://localhost:4000"),
+});
+--- apps\web\src\lib\groupActions.ts
+"use server";
+
+import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
+import { z } from "@cc/shared";
+import type { ActionState } from "@/lib/actionState";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+
+const ERRORS: Record<string, string> = {
+  GROUP_NOT_FOUND: "This group no longer exists.",
+  GROUP_NOT_OPEN: "Joining has closed for this group.",
+  GROUP_FULL: "This group is full.",
+  ALREADY_MEMBER: "You are already in this group.",
+  NOT_MEMBER: "You are not a member of this group.",
+  LEAVE_NOT_ALLOWED: "You can no longer leave this group.",
+  VARIANT_NOT_FOUND: "That product variant is not available.",
+  GROUP_BUSY: "Many people are joining right now. Please try again.",
+  UNAUTHENTICATED: "Please log in first.",
+};
+
+function friendly(message: string): string {
+  for (const [code, text] of Object.entries(ERRORS)) {
+    if (message.includes(code)) return text;
+  }
+  console.error("group rpc failed:", message);
+  return "Something went wrong. Please try again.";
+}
+
+const fail = (error: string): ActionState => ({ error, notice: null });
+const commitmentSchema = z.enum(["interested", "committed"]).default("interested");
+
+async function requireUser() {
+  const supabase = await createSupabaseServerClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect("/login"); // adjust if your login route has another path
+  return supabase;
+}
+
+const startSchema = z.object({ variantId: z.string().uuid(), commitment: commitmentSchema });
+
+/** Join the open group for a variant, creating it (or an overflow group) if needed. */
+export async function joinOrCreateGroupAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const parsed = startSchema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return fail("Invalid request.");
+  const supabase = await requireUser();
+
+  // Launch city is Chennai (decision D14). Phase 13 will let buyers choose.
+  const { data: region } = await supabase
+    .from("regions")
+    .select("id")
+    .eq("slug", "chennai")
+    .maybeSingle();
+  if (!region) return fail("The launch region is not set up yet.");
+
+  const { data, error } = await supabase.rpc("join_or_create_group", {
+    p_variant_id: parsed.data.variantId,
+    p_region_id: region.id,
+    p_commitment: parsed.data.commitment,
+  });
+  if (error) return fail(friendly(error.message));
+
+  const row = z.object({ group_id: z.string() }).safeParse(data);
+  if (!row.success) return fail("Something went wrong. Please try again.");
+  revalidatePath("/groups");
+  redirect(`/groups/${row.data.group_id}`);
+}
+
+const joinSchema = z.object({ groupId: z.string().uuid(), commitment: commitmentSchema });
+
+export async function joinGroupAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const parsed = joinSchema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return fail("Invalid request.");
+  const supabase = await requireUser();
+
+  const { error } = await supabase.rpc("join_group", {
+    p_group_id: parsed.data.groupId,
+    p_commitment: parsed.data.commitment,
+  });
+  if (error) return fail(friendly(error.message));
+  revalidatePath(`/groups/${parsed.data.groupId}`);
+  return { error: null, notice: "You have joined this group." };
+}
+
+const leaveSchema = z.object({ groupId: z.string().uuid() });
+
+export async function leaveGroupAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const parsed = leaveSchema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return fail("Invalid request.");
+  const supabase = await requireUser();
+
+  const { error } = await supabase.rpc("leave_group", { p_group_id: parsed.data.groupId });
+  if (error) return fail(friendly(error.message));
+  revalidatePath(`/groups/${parsed.data.groupId}`);
+  return { error: null, notice: "You have left this group." };
+}
+--- apps\web\src\lib\groups.ts
+import { z } from "@cc/shared";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+
+export const groupStatusSchema = z.enum([
+  "open",
+  "full",
+  "bidding",
+  "locked",
+  "completed",
+  "cancelled",
+  "expired_no_offers",
+]);
+export type GroupStatus = z.infer<typeof groupStatusSchema>;
+
+export const STATUS_LABELS: Record<GroupStatus, string> = {
+  open: "Open to join",
+  full: "Full",
+  bidding: "Sellers are bidding",
+  locked: "Choose an offer",
+  completed: "Completed",
+  cancelled: "Cancelled",
+  expired_no_offers: "Closed (no offers)",
+};
+
+const groupSchema = z.object({
+  id: z.string(),
+  status: groupStatusSchema,
+  region_id: z.string(),
+  min_members: z.number().int(),
+  max_members: z.number().int().nullable(),
+  member_count: z.number().int(),
+  join_deadline_at: z.string(),
+  bidding_deadline_at: z.string(),
+  selection_deadline_at: z.string(),
+  region: z.object({ name: z.string() }),
+  variant: z.object({
+    id: z.string(),
+    label: z.string(),
+    product: z.object({ name: z.string(), brand: z.string() }),
+  }),
+});
+export type Group = z.infer<typeof groupSchema>;
+
+const memberSchema = z.object({
+  display_name: z.string(),
+  commitment: z.enum(["interested", "committed"]),
+  joined_at: z.string(),
+});
+export type PublicMember = z.infer<typeof memberSchema>;
+
+const SELECT =
+  "id, status, region_id, min_members, max_members, member_count, join_deadline_at, bidding_deadline_at, selection_deadline_at, region:regions(name), variant:product_variants(id, label, product:products(name, brand))";
+
+const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+export async function listActiveGroups(): Promise<Group[]> {
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase
+    .from("groups")
+    .select(SELECT)
+    .in("status", ["open", "full", "bidding", "locked"])
+    .order("created_at", { ascending: false })
+    .limit(50);
+  if (error) throw new Error("Could not load groups.");
+  return z.array(groupSchema).parse(data);
+}
+
+export async function getGroup(id: string): Promise<Group | null> {
+  if (!UUID.test(id)) return null;
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase.from("groups").select(SELECT).eq("id", id).maybeSingle();
+  if (error) throw new Error("Could not load the group.");
+  return data ? groupSchema.parse(data) : null;
+}
+
+export async function listGroupMembers(id: string): Promise<PublicMember[]> {
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase
+    .from("group_members_public")
+    .select("display_name, commitment, joined_at")
+    .eq("group_id", id)
+    .order("joined_at");
+  if (error) throw new Error("Could not load members.");
+  return z.array(memberSchema).parse(data);
+}
+
+export async function getMyMembership(id: string): Promise<{ commitment: string } | null> {
+  const supabase = await createSupabaseServerClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return null;
+  const { data } = await supabase
+    .from("group_members")
+    .select("commitment")
+    .eq("group_id", id)
+    .eq("user_id", user.id)
+    .is("left_at", null)
+    .maybeSingle();
+  return data ?? null;
+}
+--- apps\web\src\lib\money.ts
+/** Formats whole paise as Indian rupees, for example 1499900 becomes "â‚¹14,999". */
+export function formatPaiseAsINR(paise: number): string {
+  if (!Number.isInteger(paise)) {
+    throw new RangeError("paise must be a whole number");
+  }
+  return new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+    minimumFractionDigits: paise % 100 === 0 ? 0 : 2,
+    maximumFractionDigits: 2,
+  }).format(paise / 100);
+}
+--- apps\web\src\lib\myGroups.ts
+import { z } from "@cc/shared";
+import { requireUser } from "@/lib/requireUser";
+import { effectiveTier } from "@/lib/tiers";
+
+export interface MyGroupRow {
+  groupId: string;
+  status: string;
+  productName: string;
+  brand: string;
+  variantLabel: string;
+  memberCount: number;
+  minMembers: number;
+  joinDeadline: string;
+  chosen: { sellerName: string; unitPricePaise: number | null; deliveryDays: number } | null;
+}
+
+const membershipSchema = z.array(
+  z.object({
+    group: z.object({
+      id: z.string(),
+      status: z.string(),
+      member_count: z.number().int(),
+      min_members: z.number().int(),
+      join_deadline_at: z.string(),
+      variant: z.object({
+        label: z.string(),
+        product: z.object({ name: z.string(), brand: z.string() }),
+      }),
+    }),
+  }),
+);
+
+export async function listMyGroups(): Promise<MyGroupRow[]> {
+  const { supabase, user } = await requireUser();
+
+  const { data, error } = await supabase
+    .from("group_members")
+    .select(
+      "group:groups(id, status, member_count, min_members, join_deadline_at, variant:product_variants(label, product:products(name, brand)))",
+    )
+    .eq("user_id", user.id)
+    .is("left_at", null)
+    .order("joined_at", { ascending: false });
+  if (error) throw new Error("Could not load your groups.");
+  const memberships = membershipSchema.parse(data);
+
+  const { data: selections } = await supabase
+    .from("buyer_selections")
+    .select("group_id, quotation_id")
+    .eq("user_id", user.id);
+  const selectionByGroup = new Map(
+    (selections ?? []).map((s) => [s.group_id as string, s.quotation_id as string]),
+  );
+
+  const quotationIds = [...selectionByGroup.values()];
+  const quoteById = new Map<
+    string,
+    {
+      sellerId: string;
+      deliveryDays: number;
+      tiers: { minMembers: number; unitPricePaise: number }[];
+    }
+  >();
+  const sellerNames = new Map<string, string>();
+
+  if (quotationIds.length > 0) {
+    const { data: quotes } = await supabase
+      .from("quotations")
+      .select("id, seller_id, delivery_days, quotation_tiers(min_members, unit_price_paise)")
+      .in("id", quotationIds);
+    for (const q of quotes ?? []) {
+      quoteById.set(q.id as string, {
+        sellerId: q.seller_id as string,
+        deliveryDays: q.delivery_days as number,
+        tiers: (q.quotation_tiers as { min_members: number; unit_price_paise: number }[]).map(
+          (t) => ({
+            minMembers: t.min_members,
+            unitPricePaise: Number(t.unit_price_paise),
+          }),
+        ),
+      });
+    }
+    const sellerIds = [...new Set([...quoteById.values()].map((q) => q.sellerId))];
+    if (sellerIds.length > 0) {
+      const { data: sellers } = await supabase
+        .from("sellers_public")
+        .select("user_id, business_name")
+        .in("user_id", sellerIds);
+      for (const s of sellers ?? [])
+        sellerNames.set(s.user_id as string, s.business_name as string);
+    }
+  }
+
+  return memberships.map(({ group }) => {
+    const quoteId = selectionByGroup.get(group.id);
+    const quote = quoteId ? quoteById.get(quoteId) : undefined;
+    return {
+      groupId: group.id,
+      status: group.status,
+      productName: group.variant.product.name,
+      brand: group.variant.product.brand,
+      variantLabel: group.variant.label,
+      memberCount: group.member_count,
+      minMembers: group.min_members,
+      joinDeadline: group.join_deadline_at,
+      chosen: quote
+        ? {
+            sellerName: sellerNames.get(quote.sellerId) ?? "Verified seller",
+            unitPricePaise: effectiveTier(quote.tiers, group.member_count)?.unitPricePaise ?? null,
+            deliveryDays: quote.deliveryDays,
+          }
+        : null,
+    };
+  });
+}
+--- apps\web\src\lib\myQuotes.ts
+import { z } from "@cc/shared";
+import { requireUser } from "@/lib/requireUser";
+import { effectiveTier } from "@/lib/tiers";
+
+export interface MyQuoteRow {
+  groupId: string;
+  groupStatus: string;
+  productName: string;
+  variantLabel: string;
+  memberCount: number;
+  quoteStatus: string;
+  currentPricePaise: number | null;
+  tiers: { minMembers: number; unitPricePaise: number }[];
+}
+
+const schema = z.array(
+  z.object({
+    status: z.string(),
+    group: z.object({
+      id: z.string(),
+      status: z.string(),
+      member_count: z.number().int(),
+      variant: z.object({ label: z.string(), product: z.object({ name: z.string() }) }),
+    }),
+    quotation_tiers: z.array(
+      z.object({ min_members: z.number().int(), unit_price_paise: z.number() }),
+    ),
+  }),
+);
+
+export async function listMyQuotes(): Promise<MyQuoteRow[]> {
+  const { supabase, user } = await requireUser();
+  const { data, error } = await supabase
+    .from("quotations")
+    .select(
+      "status, group:groups(id, status, member_count, variant:product_variants(label, product:products(name))), quotation_tiers(min_members, unit_price_paise)",
+    )
+    .eq("seller_id", user.id)
+    .order("created_at", { ascending: false });
+  if (error) throw new Error("Could not load your quotations.");
+
+  return schema.parse(data).map((q) => {
+    const tiers = q.quotation_tiers
+      .map((t) => ({ minMembers: t.min_members, unitPricePaise: Number(t.unit_price_paise) }))
+      .sort((a, b) => a.minMembers - b.minMembers);
+    return {
+      groupId: q.group.id,
+      groupStatus: q.group.status,
+      productName: q.group.variant.product.name,
+      variantLabel: q.group.variant.label,
+      memberCount: q.group.member_count,
+      quoteStatus: q.status,
+      currentPricePaise: effectiveTier(tiers, q.group.member_count)?.unitPricePaise ?? null,
+      tiers,
+    };
+  });
+}
+--- apps\web\src\lib\notificationActions.ts
+"use server";
+
+import { revalidatePath } from "next/cache";
+import type { ActionState } from "@/lib/actionState";
+import { requireUser } from "@/lib/requireUser";
+
+export async function markNotificationsReadAction(): Promise<ActionState> {
+  const { supabase } = await requireUser();
+  const { error } = await supabase.rpc("mark_notifications_read");
+  if (error) return { error: "Could not update notifications.", notice: null };
+  revalidatePath("/notifications");
+  return { error: null, notice: "All marked as read." };
+}
+--- apps\web\src\lib\notifications.ts
+import { z } from "@cc/shared";
+import { requireUser } from "@/lib/requireUser";
+
+const schema = z.array(
+  z.object({
+    id: z.string(),
+    title: z.string(),
+    body: z.string(),
+    link: z.string().nullable(),
+    created_at: z.string(),
+    read_at: z.string().nullable(),
+  }),
+);
+export type NotificationRow = z.infer<typeof schema>[number];
+
+export async function listNotifications(): Promise<NotificationRow[]> {
+  const { supabase } = await requireUser();
+  const { data, error } = await supabase
+    .from("notifications")
+    .select("id, title, body, link, created_at, read_at")
+    .order("created_at", { ascending: false })
+    .limit(50);
+  if (error) throw new Error("Could not load notifications.");
+  return schema.parse(data);
+}
+--- apps\web\src\lib\offerActions.ts
+"use server";
+
+import { revalidatePath } from "next/cache";
+import { z } from "@cc/shared";
+import type { ActionState } from "@/lib/actionState";
+import { requireUser } from "@/lib/requireUser";
+import { friendlyRpcError } from "@/lib/rpcErrors";
+
+const schema = z.object({ groupId: z.string().uuid(), quotationId: z.string().uuid() });
+
+export async function selectOfferAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const parsed = schema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return { error: "Invalid request.", notice: null };
+  const { supabase } = await requireUser();
+  const { error } = await supabase.rpc("select_offer", {
+    p_group_id: parsed.data.groupId,
+    p_quotation_id: parsed.data.quotationId,
+  });
+  if (error) return { error: friendlyRpcError(error.message), notice: null };
+  revalidatePath(`/groups/${parsed.data.groupId}`);
+  return { error: null, notice: "Offer chosen. You can change it until selection closes." };
+}
+--- apps\web\src\lib\offers.ts
+import { z } from "@cc/shared";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+import type { Tier } from "@/lib/tiers";
+
+export interface Offer {
+  id: string;
+  sellerName: string;
+  sellerCity: string;
+  deliveryDays: number;
+  warrantyMonths: number;
+  notes: string | null;
+  tiers: Tier[];
+}
+
+const offerSchema = z.object({
+  id: z.string(),
+  seller_id: z.string(),
+  delivery_days: z.number().int(),
+  warranty_months: z.number().int(),
+  notes: z.string().nullable(),
+  quotation_tiers: z.array(
+    z.object({ min_members: z.number().int(), unit_price_paise: z.number() }),
+  ),
+});
+
+export async function listOffers(groupId: string): Promise<Offer[]> {
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase
+    .from("quotations")
+    .select(
+      "id, seller_id, delivery_days, warranty_months, notes, quotation_tiers(min_members, unit_price_paise)",
+    )
+    .eq("group_id", groupId)
+    .eq("status", "submitted");
+  if (error) throw new Error("Could not load offers.");
+  const rows = z.array(offerSchema).parse(data);
+  if (rows.length === 0) return [];
+
+  const { data: sellers } = await supabase
+    .from("sellers_public")
+    .select("user_id, business_name, city")
+    .in(
+      "user_id",
+      rows.map((r) => r.seller_id),
+    );
+  const byId = new Map((sellers ?? []).map((s) => [s.user_id as string, s]));
+
+  return rows.map((r) => ({
+    id: r.id,
+    sellerName: byId.get(r.seller_id)?.business_name ?? "Verified seller",
+    sellerCity: byId.get(r.seller_id)?.city ?? "",
+    deliveryDays: r.delivery_days,
+    warrantyMonths: r.warranty_months,
+    notes: r.notes,
+    tiers: r.quotation_tiers
+      .map((t) => ({ minMembers: t.min_members, unitPricePaise: t.unit_price_paise }))
+      .sort((a, b) => a.minMembers - b.minMembers),
+  }));
+}
+
+export async function getMySelection(groupId: string): Promise<string | null> {
+  const supabase = await createSupabaseServerClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return null;
+  const { data } = await supabase
+    .from("buyer_selections")
+    .select("quotation_id")
+    .eq("group_id", groupId)
+    .eq("user_id", user.id)
+    .maybeSingle();
+  return data?.quotation_id ?? null;
+}
+--- apps\web\src\lib\orders.ts
+import { z } from "@cc/shared";
+import { requireUser } from "@/lib/requireUser";
+
+const buyerSchema = z.array(
+  z.object({
+    group_id: z.string(),
+    product_name: z.string(),
+    variant_label: z.string(),
+    seller_name: z.string(),
+    seller_phone: z.string(),
+    seller_city: z.string(),
+    unit_price_paise: z.number().nullable(),
+    delivery_days: z.number().int(),
+  }),
+);
+export type BuyerOrder = z.infer<typeof buyerSchema>[number];
+
+const sellerSchema = z.array(
+  z.object({
+    group_id: z.string(),
+    product_name: z.string(),
+    variant_label: z.string(),
+    buyer_name: z.string(),
+    buyer_email: z.string(),
+    unit_price_paise: z.number().nullable(),
+    selected_at: z.string(),
+  }),
+);
+export type SellerOrder = z.infer<typeof sellerSchema>[number];
+
+export async function listMyOrders(): Promise<BuyerOrder[]> {
+  const { supabase } = await requireUser();
+  const { data, error } = await supabase.rpc("my_orders");
+  if (error) throw new Error("Could not load your orders.");
+  return buyerSchema.parse(data ?? []);
+}
+
+export async function listSellerOrders(): Promise<SellerOrder[]> {
+  const { supabase } = await requireUser();
+  const { data, error } = await supabase.rpc("seller_orders");
+  if (error) throw new Error("Could not load your orders.");
+  return sellerSchema.parse(data ?? []);
+}
+--- apps\web\src\lib\requireAdmin.ts
+import { notFound } from "next/navigation";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+
+export async function requireAdmin() {
+  const supabase = await createSupabaseServerClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) notFound();
+  const { data: isAdmin } = await supabase.rpc("is_admin");
+  if (isAdmin !== true) notFound();
+  return supabase;
+}
+--- apps\web\src\lib\requireUser.ts
+import { redirect } from "next/navigation";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+
+export async function requireUser() {
+  const supabase = await createSupabaseServerClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) redirect("/login"); // adjust if your login route differs
+  return { supabase, user };
+}
+--- apps\web\src\lib\rpcErrors.ts
+const ERRORS: Record<string, string> = {
+  UNAUTHENTICATED: "Please log in first.",
+  FORBIDDEN: "You are not allowed to do that.",
+  NOT_VERIFIED_SELLER: "Your seller account is not verified yet.",
+  GROUP_NOT_FOUND: "This group no longer exists.",
+  BIDDING_CLOSED: "Bidding is closed for this group.",
+  INVALID_TIERS:
+    "Tiers must have rising member counts and falling prices, and the first tier must start at or below the group minimum.",
+  QUOTE_NOT_FOUND: "You have no active quotation for this group.",
+  SELECTION_CLOSED: "Choosing an offer is closed for this group.",
+  NOT_MEMBER: "Only group members can choose an offer.",
+  OFFER_NOT_FOUND: "That offer is no longer available.",
+  SELLER_NOT_FOUND: "Seller not found.",
+};
+
+export function friendlyRpcError(message: string): string {
+  for (const [code, text] of Object.entries(ERRORS)) {
+    if (message.includes(code)) return text;
+  }
+  console.error("rpc failed:", message);
+  return "Something went wrong. Please try again.";
+}
+--- apps\web\src\lib\sellerActions.ts
+"use server";
+
+import { revalidatePath } from "next/cache";
+import { z } from "@cc/shared";
+import type { ActionState } from "@/lib/actionState";
+import { requireAdmin } from "@/lib/requireAdmin";
+import { requireUser } from "@/lib/requireUser";
+import { friendlyRpcError } from "@/lib/rpcErrors";
+
+const fail = (error: string): ActionState => ({ error, notice: null });
+const ok = (notice: string): ActionState => ({ error: null, notice });
+
+const applySchema = z.object({
+  businessName: z.string().trim().min(2, "Business name is required.").max(120),
+  gstin: z.string().trim().toUpperCase().optional(),
+  city: z.string().trim().min(2, "City is required.").max(80),
+  phone: z
+    .string()
+    .trim()
+    .regex(/^[0-9+ -]{8,15}$/, "Enter a valid phone number."),
+});
+
+export async function applyAsSellerAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const parsed = applySchema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Invalid input.");
+  const { supabase } = await requireUser();
+
+  const { error } = await supabase.rpc("apply_as_seller", {
+    p_business_name: parsed.data.businessName,
+    p_gstin: parsed.data.gstin ?? "",
+    p_city: parsed.data.city,
+    p_phone: parsed.data.phone,
+  });
+  if (error) {
+    return fail(
+      error.code === "23514"
+        ? "Check the GSTIN format (15 characters)."
+        : friendlyRpcError(error.message),
+    );
+  }
+  revalidatePath("/seller");
+  return ok("Application sent. An admin will review it.");
+}
+
+const quoteSchema = z.object({
+  groupId: z.string().uuid(),
+  deliveryDays: z.coerce
+    .number()
+    .int()
+    .min(1, "Delivery days: 1 to 90.")
+    .max(90, "Delivery days: 1 to 90."),
+  warrantyMonths: z.coerce.number().int().min(0).max(120),
+  notes: z.string().trim().max(500).optional(),
+});
+
+export async function submitQuotationAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const parsed = quoteSchema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return fail(parsed.error.issues[0]?.message ?? "Invalid input.");
+
+  const tiers = [1, 2, 3].flatMap((i) => {
+    const min = String(formData.get(`t${i}Min`) ?? "").trim();
+    const price = String(formData.get(`t${i}Price`) ?? "").trim();
+    if (!min && !price) return [];
+    return [{ min_members: Number(min), unit_price_paise: Math.round(Number(price) * 100) }];
+  });
+  const badTier = tiers.some(
+    (t) =>
+      !Number.isInteger(t.min_members) ||
+      t.min_members < 1 ||
+      !Number.isFinite(t.unit_price_paise) ||
+      t.unit_price_paise < 1,
+  );
+  if (tiers.length === 0 || badTier)
+    return fail("Enter at least one valid tier (members and price).");
+
+  const { supabase } = await requireUser();
+  const { error } = await supabase.rpc("submit_quotation", {
+    p_group_id: parsed.data.groupId,
+    p_delivery_days: parsed.data.deliveryDays,
+    p_warranty_months: parsed.data.warrantyMonths,
+    p_notes: parsed.data.notes ?? "",
+    p_tiers: tiers,
+  });
+  if (error) return fail(friendlyRpcError(error.message));
+  revalidatePath(`/seller/groups/${parsed.data.groupId}`);
+  return ok("Quotation saved.");
+}
+
+export async function withdrawQuotationAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const parsed = z.object({ groupId: z.string().uuid() }).safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return fail("Invalid request.");
+  const { supabase } = await requireUser();
+  const { error } = await supabase.rpc("withdraw_quotation", { p_group_id: parsed.data.groupId });
+  if (error) return fail(friendlyRpcError(error.message));
+  revalidatePath(`/seller/groups/${parsed.data.groupId}`);
+  return ok("Quotation withdrawn.");
+}
+
+const statusSchema = z.object({
+  userId: z.string().uuid(),
+  status: z.enum(["verified", "rejected", "suspended", "pending"]),
+});
+
+export async function setSellerStatusAction(
+  _prev: ActionState,
+  formData: FormData,
+): Promise<ActionState> {
+  const supabase = await requireAdmin();
+  const parsed = statusSchema.safeParse(Object.fromEntries(formData));
+  if (!parsed.success) return fail("Invalid request.");
+  const { error } = await supabase.rpc("admin_set_seller_status", {
+    p_user_id: parsed.data.userId,
+    p_status: parsed.data.status,
+  });
+  if (error) return fail(friendlyRpcError(error.message));
+  revalidatePath("/admin/sellers");
+  return ok("Seller updated.");
+}
+--- apps\web\src\lib\sellers.ts
+import { z } from "@cc/shared";
+import { listActiveGroups, type Group } from "@/lib/groups";
+import { createSupabaseServerClient } from "@/lib/supabase/server";
+
+const sellerSchema = z.object({
+  business_name: z.string(),
+  city: z.string(),
+  status: z.enum(["pending", "verified", "rejected", "suspended"]),
+});
+export type MySeller = z.infer<typeof sellerSchema>;
+
+export async function getMySeller(userId: string): Promise<MySeller | null> {
+  const supabase = await createSupabaseServerClient();
+  const { data } = await supabase
+    .from("seller_profiles")
+    .select("business_name, city, status")
+    .eq("user_id", userId)
+    .maybeSingle();
+  return data ? sellerSchema.parse(data) : null;
+}
+
+export async function listBiddingGroups(): Promise<Group[]> {
+  const groups = await listActiveGroups();
+  return groups.filter((g) => g.status === "bidding");
+}
+
+const myQuoteSchema = z.object({
+  status: z.enum(["submitted", "withdrawn"]),
+  delivery_days: z.number().int(),
+  warranty_months: z.number().int(),
+  notes: z.string().nullable(),
+  quotation_tiers: z.array(
+    z.object({ min_members: z.number().int(), unit_price_paise: z.number() }),
+  ),
+});
+export type MyQuote = z.infer<typeof myQuoteSchema>;
+
+export async function getMyQuotation(groupId: string, userId: string): Promise<MyQuote | null> {
+  const supabase = await createSupabaseServerClient();
+  const { data } = await supabase
+    .from("quotations")
+    .select(
+      "status, delivery_days, warranty_months, notes, quotation_tiers(min_members, unit_price_paise)",
+    )
+    .eq("group_id", groupId)
+    .eq("seller_id", userId)
+    .maybeSingle();
+  if (!data) return null;
+  const quote = myQuoteSchema.parse(data);
+  quote.quotation_tiers.sort((a, b) => a.min_members - b.min_members);
+  return quote;
+}
+--- apps\web\src\lib\slug.ts
+export function slugify(input: string): string {
+  return input
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/\p{M}/gu, "")
+    .replace(/[^\p{L}\p{N}]+/gu, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 80);
+}
+--- apps\web\src\lib\supabaseEnv.ts
+import { z } from "@cc/shared";
+
+const supabaseEnvSchema = z.object({
+  NEXT_PUBLIC_SUPABASE_URL: z.string().url("must be a full URL such as https://abc.supabase.co"),
+  NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: z.string().min(20, "looks too short to be a real key"),
+});
+
+export type SupabaseEnv = z.infer<typeof supabaseEnvSchema>;
+
+/** Validates the browser-visible Supabase settings. Throws a readable error when invalid. */
+export function parseSupabaseEnv(
+  source: Readonly<Record<string, string | undefined>>,
+): SupabaseEnv {
+  const result = supabaseEnvSchema.safeParse(source);
+  if (!result.success) {
+    const lines = result.error.issues.map(
+      (issue) => `  - ${issue.path.map(String).join(".") || "(root)"}: ${issue.message}`,
+    );
+    throw new Error(`Invalid Supabase environment configuration:\n${lines.join("\n")}`);
+  }
+  return result.data;
+}
+
+/** NEXT_PUBLIC_* variables must be referenced literally so Next.js can inline them. */
+export function getSupabaseEnv(): SupabaseEnv {
+  return parseSupabaseEnv({
+    NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
+    NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+  });
+}
+/** True when both Supabase settings are present and valid. Never throws. */
+export function isSupabaseConfigured(): boolean {
+  return supabaseEnvSchema.safeParse({
+    NEXT_PUBLIC_SUPABASE_URL: process.env.NEXT_PUBLIC_SUPABASE_URL,
+    NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY: process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
+  }).success;
+}
+--- apps\web\src\lib\tiers.ts
+export interface Tier {
+  minMembers: number;
+  unitPricePaise: number;
+}
+
+/** Best price the group has unlocked at this member count. */
+export function effectiveTier(tiers: Tier[], members: number): Tier | null {
+  const eligible = tiers.filter((t) => t.minMembers <= members);
+  if (eligible.length === 0) return null;
+  return eligible.reduce((best, t) => (t.minMembers > best.minMembers ? t : best));
+}
+
+/** Next tier the group has not reached yet. */
+export function nextTier(tiers: Tier[], members: number): Tier | null {
+  const upcoming = tiers.filter((t) => t.minMembers > members);
+  if (upcoming.length === 0) return null;
+  return upcoming.reduce((soonest, t) => (t.minMembers < soonest.minMembers ? t : soonest));
+}
+/** Index of the lowest price, ignoring offers with no unlocked tier. Returns -1 if none. */
+export function lowestIndex(prices: (number | null)[]): number {
+  let best = -1;
+  prices.forEach((price, i) => {
+    if (price !== null && (best === -1 || price < (prices[best] as number))) best = i;
+  });
+  return best;
+}
+--- apps\web\src\lib\time.ts
+export function formatTimeLeft(target: Date | string, now: Date = new Date()): string {
+  const ms = new Date(target).getTime() - now.getTime();
+  if (ms <= 0) return "Closed";
+  const minutes = Math.floor(ms / 60_000);
+  const days = Math.floor(minutes / 1440);
+  const hours = Math.floor((minutes % 1440) / 60);
+  const mins = minutes % 60;
+  if (days > 0) return `${days}d ${hours}h left`;
+  if (hours > 0) return `${hours}h ${mins}m left`;
+  return `${mins}m left`;
+}
+--- apps\web\src\proxy.ts
+import type { NextRequest } from "next/server";
+import { updateSession } from "@/lib/supabase/updateSession";
+
+export async function proxy(request: NextRequest) {
+  return updateSession(request);
+}
+
+export const config = {
+  matcher: ["/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)"],
+};
+--- packages\shared\src\errors.ts
+import { z } from "zod";
+
+/**
+ * The ONE error shape every API error uses (Part 7.1), so the frontend
+ * can handle errors in a single place.
+ */
+export const apiErrorBodySchema = z.object({
+  error: z.object({
+    code: z.string().min(1),
+    message: z.string(),
+    details: z.record(z.string(), z.unknown()),
+  }),
+});
+
+export type ApiErrorBody = z.infer<typeof apiErrorBodySchema>;
+--- packages\shared\src\index.ts
+// Re-exported so the web app and the API validate with the SAME Zod copy.
+export { z } from "zod";
+
+export * from "./errors.js";
+export * from "./money.js";
+--- packages\shared\src\money.ts
+import { z } from "zod";
+
+/**
+ * Money convention (ADR-005)
+ * --------------------------
+ * - PostgreSQL stores every amount as BIGINT paise.
+ * - In JavaScript an amount is a whole `number` of paise (a safe integer).
+ * - JSON carries integers; API field names end in `Paise`.
+ * - Floating-point rupees are NEVER used for calculation or storage.
+ */
+export type Paise = number;
+
+/** True when the value is a whole number of paise that JavaScript can represent exactly. */
+export function isPaise(value: unknown): value is Paise {
+  return typeof value === "number" && Number.isSafeInteger(value);
+}
+
+/** Throws a RangeError unless the value is a safe-integer number of paise. */
+export function assertPaise(value: unknown, label = "amount"): asserts value is Paise {
+  if (!isPaise(value)) {
+    throw new RangeError(
+      `${label} must be a whole number of paise (safe integer), received: ${String(value)}`,
+    );
+  }
+}
+
+/**
+ * Converts a value coming from outside the type system into paise.
+ * Main use: the `pg` driver returns BIGINT columns as strings.
+ * Rejects decimals, non-numeric text and numbers beyond the safe-integer range.
+ */
+export function parsePaise(value: string | number | bigint, label = "amount"): Paise {
+  if (typeof value === "number") {
+    assertPaise(value, label);
+    return value === 0 ? 0 : value;
+  }
+
+  if (typeof value === "bigint") {
+    if (value > BigInt(Number.MAX_SAFE_INTEGER) || value < BigInt(Number.MIN_SAFE_INTEGER)) {
+      throw new RangeError(`${label} is outside the safe integer range: ${value.toString()}`);
+    }
+    return Number(value);
+  }
+
+  if (!/^-?\d+$/.test(value)) {
+    throw new RangeError(`${label} must be an integer string of paise, received: "${value}"`);
+  }
+  const parsed = Number(value);
+  assertPaise(parsed, label);
+  return parsed === 0 ? 0 : parsed;
+}
+
+const RUPEE_PATTERN = /^(-)?(\d{1,13})(?:\.(\d{1,2}))?$/;
+
+/**
+ * Converts a rupee amount typed by a person (a string such as "74,500.50" or "â‚¹7,45,000")
+ * into paise using integer arithmetic only. Allows at most 2 decimal places.
+ */
+export function rupeesToPaise(input: string): Paise {
+  const cleaned = input.replace(/[â‚¹,\s]/g, "");
+  const match = RUPEE_PATTERN.exec(cleaned);
+  const whole = match?.[2];
+  if (match === null || whole === undefined) {
+    throw new RangeError(`Invalid rupee amount: "${input}"`);
+  }
+
+  const negative = match[1] === "-";
+  const fraction = (match[3] ?? "").padEnd(2, "0");
+  const paise = Number(whole) * 100 + Number(fraction);
+
+  if (paise === 0) return 0;
+  return negative ? -paise : paise;
+}
+
+/** Inserts commas the Indian way: last 3 digits, then groups of 2 (7,45,000). */
+function groupIndianDigits(digits: string): string {
+  if (digits.length <= 3) return digits;
+  const lastThree = digits.slice(-3);
+  const rest = digits.slice(0, -3).replace(/\B(?=(\d{2})+(?!\d))/g, ",");
+  return `${rest},${lastThree}`;
+}
+
+export interface FormatINROptions {
+  /**
+   * "auto"   (default): show paise only when they are not zero (â‚¹74,500 or â‚¹74,500.50)
+   * "always": always show two decimals (â‚¹74,500.00)
+   */
+  fractionDigits?: "auto" | "always";
+}
+
+/**
+ * Formats paise as rupees with the rupee sign and Indian digit grouping.
+ * Implemented by hand (not Intl) so output is identical on every browser and server.
+ */
+export function formatINR(paise: Paise, options: FormatINROptions = {}): string {
+  assertPaise(paise, "paise");
+
+  const negative = paise < 0;
+  const absolute = Math.abs(paise);
+  const rupees = Math.floor(absolute / 100);
+  const remainder = absolute % 100;
+
+  const showFraction = options.fractionDigits === "always" || remainder !== 0;
+  const fraction = showFraction ? `.${String(remainder).padStart(2, "0")}` : "";
+
+  return `${negative ? "-" : ""}â‚¹${groupIndianDigits(String(rupees))}${fraction}`;
+}
+
+/** Zod: a non-negative whole number of paise (prices, charges, discounts). */
+export const paiseSchema = z
+  .number()
+  .int("Amount must be a whole number of paise")
+  .min(0, "Amount cannot be negative")
+  .refine(Number.isSafeInteger, "Amount is too large");
+
+/** Zod: a strictly positive whole number of paise (a base price must be above zero). */
+export const positivePaiseSchema = z
+  .number()
+  .int("Amount must be a whole number of paise")
+  .min(1, "Amount must be greater than zero")
+  .refine(Number.isSafeInteger, "Amount is too large");
+
+=== ROOT package.json ===
+{
+  "name": "collective-commerce",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Collective Commerce: collective purchasing and reverse-bidding marketplace",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20.19.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "env:check": "node -v && npm -v",
+    "build:shared": "npm run build -w @cc/shared",
+    "build:api": "npm run build -w @cc/api",
+    "build:web": "npm run build -w @cc/web",
+    "build": "npm run build:shared && npm run build:api && npm run build:web",
+    "dev:api": "npm run dev -w @cc/api",
+    "dev:web": "npm run dev -w @cc/web",
+    "db:start": "supabase start",
+    "db:stop": "supabase stop",
+    "db:status": "supabase status",
+    "db:reset": "supabase db reset",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "pretypecheck": "npm run build:shared",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "pretest": "npm run build:shared",
+    "test": "npm run test --workspaces --if-present",
+    "ci": "npm run lint && npm run format:check && npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@next/eslint-plugin-next": "16.4.3",
+    "eslint": "9.39.5",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.14.0",
+    "husky": "9.1.7",
+    "lint-staged": "17.6.0",
+    "prettier": "3.9.10",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vitest": "5.0.5"
+  }
+}
+
+=== DYNAMIC ROUTE FILES (square brackets) ===
+--- apps\web\src\app\(public)\catalog\[category]\page.tsx
+import { ActionForm } from "@/components/ui/ActionForm";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+import { joinOrCreateGroupAction } from "@/lib/groupActions";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getCategoryWithProducts } from "@/lib/catalog";
+import { formatPaiseAsINR } from "@/lib/money";
+
+export const metadata: Metadata = { title: "Catalog" };
+export const dynamic = "force-dynamic";
+
+export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
+  const { category: slug } = await params;
+  const result = await getCategoryWithProducts(slug);
+  if (!result) notFound();
+
+  const { category, products } = result;
+
+  return (
+    <div className="space-y-8">
+      <header className="max-w-2xl">
+        <Link href="/catalog" className="text-sm font-semibold text-accent-600">
+          â† All categories
+        </Link>
+        <h1 className="mt-2 font-display text-3xl font-semibold tracking-tight">{category.name}</h1>
+        {category.description ? <p className="mt-3 text-ink-500">{category.description}</p> : null}
+      </header>
+
+      {products.length === 0 ? (
+        <p className="text-ink-500">No products in this category yet.</p>
+      ) : (
+        <ul className="space-y-4">
+          {products.map((product) => (
+            <li key={product.id} className="rounded-2xl border border-line bg-card p-6 shadow-card">
+              <p className="text-xs font-semibold uppercase tracking-wide text-ink-500">
+                {product.brand}
+              </p>
+              <h2 className="mt-1 text-lg font-semibold">{product.name}</h2>
+              {product.description ? (
+                <p className="mt-1 text-sm text-ink-500">{product.description}</p>
+              ) : null}
+
+              <table className="mt-4 w-full text-left text-sm">
+                <caption className="sr-only">Variants of {product.name}</caption>
+
+                <thead>
+                  <tr className="border-b border-line text-ink-500">
+                    <th scope="col" className="py-2 font-medium">
+                      Variant
+                    </th>
+
+                    <th scope="col" className="py-2 text-right font-medium">
+                      Reference price (MRP)
+                    </th>
+
+                    <th scope="col" className="py-2">
+                      <span className="sr-only">Group</span>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {product.product_variants.map((variant) => (
+                    <tr key={variant.id}>
+                      <td className="py-2.5">{variant.label}</td>
+
+                      <td className="py-2.5 text-right">{formatPaiseAsINR(variant.mrp_paise)}</td>
+
+                      <td className="py-2.5 text-right">
+                        <ActionForm action={joinOrCreateGroupAction}>
+                          <input type="hidden" name="variantId" value={variant.id} />
+
+                          <input type="hidden" name="commitment" value="interested" />
+
+                          <button type="submit" className={buttonClasses("secondary")}>
+                            Join or start group
+                          </button>
+                        </ActionForm>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      <p className="text-sm text-ink-500">
+        The price shown is only a reference. Groups and seller offers arrive in the next phases.
+        Sample products are illustrative.
+      </p>
+    </div>
+  );
+}
+--- apps\web\src\app\(public)\groups\[id]\page.tsx
+import { OfferComparison } from "@/components/domain/OfferComparison";
+import { OffersPanel } from "@/components/domain/OffersPanel";
+import { getMySelection, listOffers } from "@/lib/offers";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { AutoRefresh } from "@/components/domain/AutoRefresh";
+import { Countdown } from "@/components/domain/Countdown";
+import { GroupActions } from "@/components/domain/GroupActions";
+import { GroupProgress } from "@/components/domain/GroupProgress";
+import { getGroup, getMyMembership, listGroupMembers, STATUS_LABELS } from "@/lib/groups";
+
+export const metadata: Metadata = { title: "Group" };
+export const dynamic = "force-dynamic";
+
+export default async function GroupPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const group = await getGroup(id);
+  if (!group) notFound();
+
+  const [members, mine] = await Promise.all([listGroupMembers(id), getMyMembership(id)]);
+  const committed = members.filter((m) => m.commitment === "committed").length;
+  const showOffers = group.status === "locked" || group.status === "completed";
+  const [offers, selectedId] = showOffers
+    ? await Promise.all([listOffers(id), getMySelection(id)])
+    : [[], null];
+
+  return (
+    <div className="space-y-8">
+      <AutoRefresh />
+      <header className="max-w-2xl">
+        <Link href="/groups" className="text-sm font-semibold text-accent-600">
+          â† All groups
+        </Link>
+        <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-ink-500">
+          {group.variant.product.brand} Â· {group.region.name}
+        </p>
+        <h1 className="mt-1 font-display text-3xl font-semibold tracking-tight">
+          {group.variant.product.name}
+        </h1>
+        <p className="mt-1 text-ink-500">{group.variant.label}</p>
+        <p className="mt-3 inline-flex rounded-full bg-accent-50 px-3 py-1 text-xs font-semibold text-accent-700">
+          {STATUS_LABELS[group.status]}
+        </p>
+      </header>
+
+      <section className="max-w-2xl rounded-2xl border border-line bg-card p-6 shadow-card">
+        <GroupProgress
+          memberCount={group.member_count}
+          minMembers={group.min_members}
+          maxMembers={group.max_members}
+        />
+        <dl className="mt-5 grid grid-cols-3 gap-4 text-sm">
+          <div>
+            <dt className="text-ink-500">Joining closes</dt>
+            <dd className="font-semibold">
+              {group.status === "open" ? <Countdown target={group.join_deadline_at} /> : "Closed"}
+            </dd>
+          </div>
+          <div>
+            <dt className="text-ink-500">Committed</dt>
+            <dd className="font-semibold">{committed}</dd>
+          </div>
+          <div>
+            <dt className="text-ink-500">Interested</dt>
+            <dd className="font-semibold">{members.length - committed}</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section className="max-w-2xl rounded-2xl border border-line bg-card p-6 shadow-card">
+        <GroupActions group={group} isMember={mine !== null} />
+      </section>
+
+      <section aria-labelledby="members-h" className="max-w-2xl">
+        <h2 id="members-h" className="font-semibold">
+          Members
+        </h2>
+        {members.length === 0 ? (
+          <p className="mt-2 text-sm text-ink-500">No members yet.</p>
+        ) : (
+          <ul className="mt-3 divide-y divide-line rounded-2xl border border-line bg-card text-sm">
+            {members.map((m, i) => (
+              <li key={i} className="flex justify-between px-5 py-3">
+                <span>{m.display_name}</span>
+                <span className="text-ink-500">
+                  {m.commitment === "committed" ? "Committed" : "Interested"}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+      {showOffers && offers.length > 1 ? (
+        <OfferComparison members={group.member_count} offers={offers} />
+      ) : null}
+      {showOffers && offers.length > 0 ? (
+        <OffersPanel
+          groupId={group.id}
+          members={group.member_count}
+          offers={offers}
+          selectedId={selectedId}
+          canSelect={group.status === "locked" && mine !== null}
+        />
+      ) : null}
+      <p className="text-sm text-ink-500">
+        Joining a group is not a purchase. You choose an offer individually later. Names are
+        shortened to protect privacy.
+      </p>
+    </div>
+  );
+}
+--- apps\web\src\app\(seller)\seller\groups\[id]\page.tsx
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { Countdown } from "@/components/domain/Countdown";
+import { ActionForm } from "@/components/ui/ActionForm";
+import { buttonClasses } from "@/components/ui/buttonStyles";
+import { getGroup } from "@/lib/groups";
+import { formatPaiseAsINR } from "@/lib/money";
+import { requireUser } from "@/lib/requireUser";
+import { submitQuotationAction, withdrawQuotationAction } from "@/lib/sellerActions";
+import { getMyQuotation, getMySeller } from "@/lib/sellers";
+
+export const metadata: Metadata = { title: "Submit quotation" };
+export const dynamic = "force-dynamic";
+
+const field = "w-full rounded-lg border border-line bg-card px-3 py-2 text-sm";
+const labelClass = "mb-1 block text-xs font-semibold text-ink-500";
+
+export default async function SellerGroupPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const { user } = await requireUser();
+  const seller = await getMySeller(user.id);
+  if (!seller || seller.status !== "verified") notFound();
+
+  const group = await getGroup(id);
+  if (!group) notFound();
+  const mine = await getMyQuotation(id, user.id);
+  const active = mine?.status === "submitted" ? mine : null;
+  const tierAt = (i: number) => active?.quotation_tiers[i];
+
+  return (
+    <div className="max-w-2xl space-y-6">
+      <Link href="/seller" className="text-sm font-semibold text-accent-600">
+        â† Seller portal
+      </Link>
+      <header>
+        <p className="text-xs font-semibold uppercase tracking-wide text-ink-500">
+          {group.variant.product.brand} Â· {group.region.name}
+        </p>
+        <h1 className="mt-1 font-display text-3xl font-semibold tracking-tight">
+          {group.variant.product.name}
+        </h1>
+        <p className="text-ink-500">{group.variant.label}</p>
+        <p className="mt-3 text-sm">
+          <span className="font-semibold">{group.member_count}</span> buyers (minimum{" "}
+          {group.min_members}) Â· bidding closes in <Countdown target={group.bidding_deadline_at} />
+        </p>
+      </header>
+
+      {group.status !== "bidding" ? (
+        <p className="text-ink-500">Bidding is not open for this group.</p>
+      ) : (
+        <>
+          <ActionForm
+            action={submitQuotationAction}
+            className="space-y-4 rounded-2xl border border-line bg-card p-6 shadow-card"
+          >
+            <input type="hidden" name="groupId" value={group.id} />
+            <p className="text-sm text-ink-500">
+              Set price tiers: more buyers, lower price. The first tier must start at or below{" "}
+              {group.min_members} members. Prices are per unit in rupees.
+            </p>
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="grid grid-cols-2 gap-3">
+                <div>
+                  <label htmlFor={`t${i}Min`} className={labelClass}>
+                    Tier {i}: from members
+                  </label>
+                  <input
+                    id={`t${i}Min`}
+                    name={`t${i}Min`}
+                    type="number"
+                    min={1}
+                    defaultValue={tierAt(i - 1)?.min_members}
+                    required={i === 1}
+                    className={field}
+                  />
+                </div>
+                <div>
+                  <label htmlFor={`t${i}Price`} className={labelClass}>
+                    Tier {i}: price per unit (â‚¹)
+                  </label>
+                  <input
+                    id={`t${i}Price`}
+                    name={`t${i}Price`}
+                    type="number"
+                    min={1}
+                    step="0.01"
+                    defaultValue={
+                      tierAt(i - 1) ? Number(tierAt(i - 1)!.unit_price_paise) / 100 : undefined
+                    }
+                    required={i === 1}
+                    className={field}
+                  />
+                </div>
+              </div>
+            ))}
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label htmlFor="deliveryDays" className={labelClass}>
+                  Delivery (days)
+                </label>
+                <input
+                  id="deliveryDays"
+                  name="deliveryDays"
+                  type="number"
+                  min={1}
+                  max={90}
+                  required
+                  defaultValue={active?.delivery_days}
+                  className={field}
+                />
+              </div>
+              <div>
+                <label htmlFor="warrantyMonths" className={labelClass}>
+                  Warranty (months)
+                </label>
+                <input
+                  id="warrantyMonths"
+                  name="warrantyMonths"
+                  type="number"
+                  min={0}
+                  max={120}
+                  required
+                  defaultValue={active?.warranty_months ?? 12}
+                  className={field}
+                />
+              </div>
+            </div>
+            <div>
+              <label htmlFor="notes" className={labelClass}>
+                Notes for buyers (optional)
+              </label>
+              <textarea
+                id="notes"
+                name="notes"
+                maxLength={500}
+                rows={3}
+                defaultValue={active?.notes ?? ""}
+                className={field}
+              />
+            </div>
+            <button type="submit" className={buttonClasses("primary")}>
+              {active ? "Update quotation" : "Submit quotation"}
+            </button>
+          </ActionForm>
+
+          {active ? (
+            <ActionForm action={withdrawQuotationAction}>
+              <input type="hidden" name="groupId" value={group.id} />
+              <p className="mb-2 text-sm text-ink-500">
+                Current:{" "}
+                {active.quotation_tiers
+                  .map(
+                    (t) => `${t.min_members}+ at ${formatPaiseAsINR(Number(t.unit_price_paise))}`,
+                  )
+                  .join(" Â· ")}
+              </p>
+              <button type="submit" className={buttonClasses("secondary")}>
+                Withdraw quotation
+              </button>
+            </ActionForm>
+          ) : null}
+        </>
+      )}
+    </div>
+  );
+}

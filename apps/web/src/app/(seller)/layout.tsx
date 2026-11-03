@@ -8,6 +8,7 @@ export default function SellerLayout({ children }: { children: ReactNode }) {
       areaLabel="Seller"
       links={[
         { href: "/", label: "Home" },
+        { href: "/seller/orders", label: "Orders" },
         { href: "/seller", label: "Seller dashboard" },
         { href: "/seller/quotes", label: "My quotations" },
       ]}
