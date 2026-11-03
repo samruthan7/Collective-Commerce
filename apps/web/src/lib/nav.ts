@@ -66,6 +66,7 @@ export async function getNavState(): Promise<NavState> {
   if (profile?.role === "admin") {
     links.push(
       { href: "/admin", label: "Admin" },
+      { href: "/admin/catalog", label: "Products" },
       { href: "/admin/kyc", label: "KYC" },
       { href: "/admin/reports", label: "Reports" },
     );

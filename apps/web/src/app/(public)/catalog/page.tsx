@@ -86,6 +86,15 @@ export default async function CatalogPage({ searchParams }: { searchParams: Sear
                     href={`/catalog/${r.categorySlug}`}
                     className="block h-full rounded-2xl border border-line bg-card p-5 shadow-card transition-colors hover:border-accent-500"
                   >
+                    {r.imageUrl ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={r.imageUrl}
+                        alt={`${r.brand} ${r.name}`}
+                        className="mb-3 h-36 w-full rounded-xl object-cover"
+                        loading="lazy"
+                      />
+                    ) : null}
                     <p className="text-xs font-semibold uppercase tracking-wide text-ink-500">
                       {r.brand} · {r.categoryName}
                     </p>

@@ -51,7 +51,10 @@ export async function requireAdmin(nextPath: string) {
   if (profile?.role !== "admin") {
     notFound();
   }
-
+  // Local development only. Ignored in production.
+  if (process.env.NODE_ENV !== "production" && process.env.ADMIN_MFA_OPTIONAL === "true") {
+    return user;
+  }
   const supabase = await createSupabaseServerClient();
   const { data: aal } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
   // No authenticator yet: send the admin to set one up.

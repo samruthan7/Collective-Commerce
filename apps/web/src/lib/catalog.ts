@@ -22,6 +22,7 @@ const productSchema = z.object({
   brand: z.string(),
   name: z.string(),
   description: z.string().nullable(),
+  image_url: z.string().nullable(),
   product_variants: z.array(variantSchema),
 });
 
@@ -55,7 +56,7 @@ export async function getCategoryWithProducts(
   const { data, error } = await supabase
     .from("products")
     .select(
-      "id, slug, brand, name, description, product_variants(id, sku, label, mrp_paise, is_active)",
+      "id, slug, brand, name, description, image_url, product_variants(id, sku, label, mrp_paise, is_active)",
     )
     .eq("category_id", category.id)
     .order("name");
@@ -78,6 +79,7 @@ const searchRowSchema = z.object({
   id: z.string(),
   brand: z.string(),
   name: z.string(),
+  image_url: z.string().nullable(),
   category: z.object({ slug: z.string(), name: z.string() }),
   product_variants: z.array(z.object({ mrp_paise: z.number(), is_active: z.boolean() })),
 });
@@ -86,6 +88,7 @@ export interface SearchResult {
   id: string;
   brand: string;
   name: string;
+  imageUrl: string | null;
   categorySlug: string;
   categoryName: string;
   minPricePaise: number | null;
@@ -107,7 +110,7 @@ export async function searchProducts(rawQuery: string): Promise<SearchResult[]> 
   const { data, error } = await supabase
     .from("products")
     .select(
-      "id, brand, name, category:categories!inner(slug, name), product_variants(mrp_paise, is_active)",
+      "id, brand, name, image_url, category:categories!inner(slug, name), product_variants(mrp_paise, is_active)",
     )
     .or(`name.ilike."${pattern}",brand.ilike."${pattern}"`)
     .limit(40);
@@ -122,6 +125,7 @@ export async function searchProducts(rawQuery: string): Promise<SearchResult[]> 
         id: row.id,
         brand: row.brand,
         name: row.name,
+        imageUrl: row.image_url,
         categorySlug: row.category.slug,
         categoryName: row.category.name,
         minPricePaise: prices.length > 0 ? Math.min(...prices) : null,
