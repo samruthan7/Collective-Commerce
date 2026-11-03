@@ -1,10 +1,13 @@
 import { z } from "@cc/shared";
+function stripTrailingSlashes(value: string): string {
+  return value.replace(/\/+$/, "");
+}
 
 const webEnvSchema = z.object({
   NEXT_PUBLIC_API_URL: z
     .string()
-    .url("must be a full URL such as http://localhost:4000")
-    .transform((value) => value.replace(/\/+$/, "")),
+    .regex(/^https?:\/\/.+/i, "NEXT_PUBLIC_API_URL must start with http:// or https://")
+    .transform(stripTrailingSlashes),
 });
 
 export type WebEnv = z.infer<typeof webEnvSchema>;

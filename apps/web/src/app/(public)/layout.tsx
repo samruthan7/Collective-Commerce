@@ -5,6 +5,9 @@ export default function PublicLayout({ children }: { children: ReactNode }) {
   return (
     <AreaShell
       links={[
+        { href: "/my/groups", label: "My groups" },
+        { href: "/catalog", label: "Catalog" },
+        { href: "/groups", label: "Groups" },
         { href: "/dashboard", label: "Buyer area" },
         { href: "/seller", label: "Sell" },
       ]}

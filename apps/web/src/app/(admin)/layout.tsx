@@ -1,14 +1,17 @@
 import type { ReactNode } from "react";
 import { AreaShell } from "@/components/layout/AreaShell";
+import { requireAdmin } from "@/lib/requireAdmin";
 
-// Phase 2 adds the real auth guard here (admin role plus MFA required).
-export default function AdminLayout({ children }: { children: ReactNode }) {
+export default async function AdminLayout({ children }: { children: ReactNode }) {
+  await requireAdmin();
   return (
     <AreaShell
       areaLabel="Admin"
       links={[
         { href: "/", label: "Home" },
         { href: "/admin", label: "Admin console" },
+        { href: "/admin/catalog", label: "Catalog" },
+        { href: "/admin/sellers", label: "Sellers" },
       ]}
     >
       {children}

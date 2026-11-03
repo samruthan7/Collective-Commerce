@@ -9,6 +9,7 @@ export default function SellerLayout({ children }: { children: ReactNode }) {
       links={[
         { href: "/", label: "Home" },
         { href: "/seller", label: "Seller dashboard" },
+        { href: "/seller/quotes", label: "My quotations" },
       ]}
     >
       {children}

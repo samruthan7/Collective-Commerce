@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AuthMenu } from "./AuthMenu";
 import { Logo } from "./Logo";
 
 export interface NavLink {
@@ -28,20 +29,23 @@ export function SiteHeader({ areaLabel, links }: SiteHeaderProps) {
           ) : null}
         </Link>
 
-        <nav aria-label="Main">
-          <ul className="flex items-center gap-1">
-            {links.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="rounded-lg px-3 py-2 text-sm font-medium text-ink-700 transition-colors hover:bg-accent-50 hover:text-accent-700"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          <nav aria-label="Main">
+            <ul className="flex items-center gap-1">
+              {links.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="rounded-lg px-3 py-2 text-sm font-medium text-ink-700 transition-colors hover:bg-accent-50 hover:text-accent-700"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <AuthMenu />
+        </div>
       </div>
     </header>
   );
