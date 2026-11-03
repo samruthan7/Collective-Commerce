@@ -73,3 +73,60 @@ export async function getCategoryWithProducts(
 
   return { category, products };
 }
+
+const searchRowSchema = z.object({
+  id: z.string(),
+  brand: z.string(),
+  name: z.string(),
+  category: z.object({ slug: z.string(), name: z.string() }),
+  product_variants: z.array(z.object({ mrp_paise: z.number(), is_active: z.boolean() })),
+});
+
+export interface SearchResult {
+  id: string;
+  brand: string;
+  name: string;
+  categorySlug: string;
+  categoryName: string;
+  minPricePaise: number | null;
+  variantCount: number;
+}
+
+/** Searches product names and brands across all active categories. */
+export async function searchProducts(rawQuery: string): Promise<SearchResult[]> {
+  // Remove characters that have a meaning inside the filter string.
+  const term = rawQuery
+    .replace(/[%_,()*\\"']/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 60);
+  if (term.length < 2) return [];
+  const pattern = `%${term}%`;
+
+  const supabase = await createSupabaseServerClient();
+  const { data, error } = await supabase
+    .from("products")
+    .select(
+      "id, brand, name, category:categories!inner(slug, name), product_variants(mrp_paise, is_active)",
+    )
+    .or(`name.ilike."${pattern}",brand.ilike."${pattern}"`)
+    .limit(40);
+  if (error) throw new Error("Search is unavailable right now.");
+
+  return z
+    .array(searchRowSchema)
+    .parse(data)
+    .map((row) => {
+      const prices = row.product_variants.filter((v) => v.is_active).map((v) => v.mrp_paise);
+      return {
+        id: row.id,
+        brand: row.brand,
+        name: row.name,
+        categorySlug: row.category.slug,
+        categoryName: row.category.name,
+        minPricePaise: prices.length > 0 ? Math.min(...prices) : null,
+        variantCount: prices.length,
+      };
+    })
+    .filter((r) => r.variantCount > 0);
+}

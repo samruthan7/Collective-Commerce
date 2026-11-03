@@ -6,6 +6,8 @@ export interface Offer {
   id: string;
   sellerName: string;
   sellerCity: string;
+  sellerRating: number | null;
+  reviewCount: number;
   deliveryDays: number;
   warrantyMonths: number;
   notes: string | null;
@@ -38,24 +40,29 @@ export async function listOffers(groupId: string): Promise<Offer[]> {
 
   const { data: sellers } = await supabase
     .from("sellers_public")
-    .select("user_id, business_name, city")
+    .select("user_id, business_name, city, avg_rating, review_count")
     .in(
       "user_id",
       rows.map((r) => r.seller_id),
     );
   const byId = new Map((sellers ?? []).map((s) => [s.user_id as string, s]));
 
-  return rows.map((r) => ({
-    id: r.id,
-    sellerName: byId.get(r.seller_id)?.business_name ?? "Verified seller",
-    sellerCity: byId.get(r.seller_id)?.city ?? "",
-    deliveryDays: r.delivery_days,
-    warrantyMonths: r.warranty_months,
-    notes: r.notes,
-    tiers: r.quotation_tiers
-      .map((t) => ({ minMembers: t.min_members, unitPricePaise: t.unit_price_paise }))
-      .sort((a, b) => a.minMembers - b.minMembers),
-  }));
+  return rows.map((r) => {
+    const seller = byId.get(r.seller_id);
+    return {
+      id: r.id,
+      sellerName: seller?.business_name ?? "Verified seller",
+      sellerCity: seller?.city ?? "",
+      sellerRating: seller?.avg_rating == null ? null : Number(seller.avg_rating),
+      reviewCount: Number(seller?.review_count ?? 0),
+      deliveryDays: r.delivery_days,
+      warrantyMonths: r.warranty_months,
+      notes: r.notes,
+      tiers: r.quotation_tiers
+        .map((t) => ({ minMembers: t.min_members, unitPricePaise: t.unit_price_paise }))
+        .sort((a, b) => a.minMembers - b.minMembers),
+    };
+  });
 }
 
 export async function getMySelection(groupId: string): Promise<string | null> {

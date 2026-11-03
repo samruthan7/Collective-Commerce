@@ -27,6 +27,11 @@ export function OffersPanel({ groupId, members, offers, selectedId, canSelect }:
               <div>
                 <p className="font-semibold">{o.sellerName}</p>
                 <p className="text-sm text-ink-500">
+                  {o.sellerRating !== null
+                    ? `★ ${o.sellerRating.toFixed(1)} (${o.reviewCount} review${o.reviewCount === 1 ? "" : "s"})`
+                    : "New seller"}
+                </p>
+                <p className="text-sm text-ink-500">
                   {o.sellerCity} · delivery in {o.deliveryDays} days · {o.warrantyMonths} months
                   warranty
                 </p>

@@ -4,14 +4,15 @@ import { SiteHeader, type NavLink } from "./SiteHeader";
 
 interface AreaShellProps {
   areaLabel?: string;
-  links: NavLink[];
+  /** Optional and ignored: the header builds one navigation for everyone. */
+  links?: NavLink[];
   children: ReactNode;
 }
 
-export function AreaShell({ areaLabel, links, children }: AreaShellProps) {
+export function AreaShell({ areaLabel, children }: AreaShellProps) {
   return (
     <div className="flex min-h-dvh flex-col">
-      <SiteHeader areaLabel={areaLabel} links={links} />
+      <SiteHeader areaLabel={areaLabel} />
       <main id="main" className="mx-auto w-full max-w-6xl flex-1 px-4 py-10 sm:px-6">
         {children}
       </main>
