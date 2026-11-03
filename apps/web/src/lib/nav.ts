@@ -54,12 +54,21 @@ export async function getNavState(): Promise<NavState> {
       { href: "/seller/quotes", label: "Quotations" },
       { href: "/seller/orders", label: "Sales" },
     );
+  } else if (sellerStatus) {
+    links.push(
+      { href: "/seller", label: "Seller application" },
+      { href: "/seller/documents", label: "Documents" },
+    );
   } else {
-    links.push({ href: "/seller", label: sellerStatus ? "Seller application" : "Sell" });
+    links.push({ href: "/seller", label: "Sell" });
   }
 
   if (profile?.role === "admin") {
-    links.push({ href: "/admin", label: "Admin" }, { href: "/admin/reports", label: "Reports" });
+    links.push(
+      { href: "/admin", label: "Admin" },
+      { href: "/admin/kyc", label: "KYC" },
+      { href: "/admin/reports", label: "Reports" },
+    );
   }
 
   return { links, signedIn: true, unread };

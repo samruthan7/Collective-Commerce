@@ -44,11 +44,19 @@ export async function requireUser(nextPath: string) {
 }
 
 /** Only admins pass. Everyone else sees the 404 page. */
+/** Only admins pass, and only with two-step login. Everyone else sees the 404 page. */
 export async function requireAdmin(nextPath: string) {
   const user = await requireUser(nextPath);
   const profile = await getProfile(user.id);
   if (profile?.role !== "admin") {
     notFound();
   }
+
+  const supabase = await createSupabaseServerClient();
+  const { data: aal } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
+  // No authenticator yet: send the admin to set one up.
+  if (!aal || aal.nextLevel === "aal1") redirect("/account/security");
+  // Authenticator set up but not entered this session.
+  if (aal.currentLevel !== "aal2") redirect(`/mfa?next=${encodeURIComponent(nextPath)}`);
   return user;
 }
